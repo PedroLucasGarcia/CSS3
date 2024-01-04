@@ -1,0 +1,188 @@
+<!--                                        --- CSS ---
+
+Comentário CSS - /*  */
+
+----------------------------------------------------------------------------------------------------
+
+Folhas de estilo:
+
+External style sheet - Coloca as formatações do site em um arquivo externo(recomendado).
+
+<link rel="stylesheet" type="text/css" href="caminho da página css">
+
+Internal style sheet - Coloca o estilo direto dentro do codigo. Como declarar o internal style sheet:
+
+<style type="text/css">
+	p {
+		color: red;
+	} 
+</style> 
+Formatou todos os paragrafos e aplicou a cor vermelha.
+
+Inline style - Aplica a formatação direto no elemento.
+
+<p style="color: red;"> Aplicou o estilo direto no parágrafo mudou a cor do texto para vermelho </p>
+
+----------------------------------------------------------------------------------------------------
+
+Anatomia css:
+
+p {
+	color: blue; 
+}
+
+p = seletor - O início do conjunto de regras usado para definir o elemento que será estilizado.
+
+{
+	color: blue; = bloco de declaração - O código entre (e incluindo) as chaves ({ }) que contém as 			   declarações CSS.
+}
+
+color: blue; = declaração - O nome do grupo para um par de propriedade e valor que aplica um estilo 							ao elemento selecionado.
+
+color: = propriedade - A primeira parte da declaração que indica qual característica visual do 
+					   elemento deve ser modificada.
+
+blue; = valor - A segunda parte da declaração que significa o valor da propriedade.
+
+
+----------------------------------------------------------------------------------------------------
+
+Classes e Ids:
+
+Classe - Podemos ter varias classes. 
+
+Como utilizar uma classe:
+.azul {
+	color: blue;
+} 		
+
+. = Define que é uma classe | azul = Nome da classe.
+
+Como chamar uma classe:
+class="azul"
+
+
+Id - Podemos ter somente um id. 
+
+Como utilizar um id:
+#principal {
+	background: gray;
+}		
+
+# = Define que é um id | principal = Nome do id.
+
+Como chamar um id:
+id="principal"
+
+----------------------------------------------------------------------------------------------------
+
+Divs e Span:
+
+<div></div> - Essa tag cria uma divisão no site. Ela é um elemento do tipo block, ou seja, ocupa todo o espaçamento da tela(coloca os elementos um abaixo do outro).
+
+<span></span> - Essa tag tem a mesma dunção de uma div, a diferença é que ela é um elemento do tipo inline, ou seja, ele agrupa os elementos linha a linha(colocas os elementos um a frente do outro). A span é recomendada para fazer formatações de texto.
+
+----------------------------------------------------------------------------------------------------
+
+Bordas:
+
+border: 1px solid red; - Ao utilizar a propriedade border, definimos 3 valores: espessura, tipo e cor.
+
+Tipos de borda - https://www.w3schools.com/css/css_border.asp
+
+Outra forma de aplicar bodas é fazer de forma separada. A vantagem é que temos um controle maior da borda, podendo aplicar formatações de forma separada para cada extremidade da borda ou 2 formatações.
+
+border-width: 1px;			border-width: 1px 2px 3px 4px; 					border-width: 2px 4px;			
+border-style: solid;		border-style: solid dotted dashed double;		border-style: solid dotted;
+border-color: red;			border-color: red green blue yellow;			border-color: red blue;
+
+A ordem é: cima, direita, baixo e esquerda
+----------------------------------------------------------------------------------------------------
+
+Fontes e Cores:
+
+Cores:
+
+color: #E45281 - outra forma de colocar cor é usando os código exadecimal.
+
+Codigos de cores - https://html-color-codes.info/Codigos-de-Cores-HTML/
+
+Fontes:
+
+Tipos de fontes - https://www.w3schools.com/cssref/css_websafe_fonts.php
+
+font-size: = tamanho da imagem/texto
+
+font-family: = tipo de fonte. Pode ser serif, sans-serif ou Monospace e cada família possui outras fontes
+
+ex: font-family: "Times New Roman", Times, serif;  neste exemplo tem 2 fontes específicas e 1 fonte genérica. (obs: coloca-se em maiúsculo fontes específicas e quando for nome duplo(composto), colocamos "aspas").
+
+Link: https://www.w3schools.com/css/css_font.asp
+
+----------------------------------------------------------------------------------------------------
+
+Tamanhos de textos:
+
+px - pixel = tamanho fixo (tamanho padrão = 16px)
+% - porcentagem = tamanho relativo, relativo ao tamanho padrão (100% do tamanho padrão = 16px)
+em - tamanho relativo ao container pai (1em = tamanho do container pai)
+
+-----------------------------------------------------------------------------------------------------
+
+Estilos de Texto: https://www.w3schools.com/cssref/pr_font_font.php
+
+.negrito {
+font-weight: bold; (normal, bold e pode aplicar um valor vai de 100 até 900);
+}
+
+.italico {
+font-style: italic;
+}
+
+.formatacao {
+text-decoration: (underline, overline, line-through e none);
+}
+
+.texto {
+font: bold 40px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+----------------------------------------------------------------------------------------------------
+
+Cor e Imagem:
+
+Cor: https://www.w3schools.com/css/css_background.asp
+
+Para aplicar uma cor para o fundo:
+background-color: cor;
+
+Para aplicar uma cor para o texto:
+color: cor;
+
+Imagem:
+
+Para aplicar uma imagem de fundo:
+background-image: url('caminho/da.imagem');
+
+Para definir como vai ser a repetição:
+backgrund-repeat:(no-repeat, repeat, repeat-x e repeat-y);
+
+Formatações da imagem de fundo, se ela permanece fixa ou não:
+background-attachment:(fixed, scroll);
+
+Para definir uma posição:
+background-position:(center, left, right); 
+(pode ter 2 valores, o primeiro é na horizontal e o segundo é na vestical)
+
+
+Para aplicar várias propriedades:
+background: blue url('img/yoshi.png') no-repeat fixed center center;
+(Ordem: cor, imagem, repetição, attachment e posição)
+
+----------------------------------------------------------------------------------------------------
+
+padding: ; - Aplica um espaçamento interno
+
+----------------------------------------------------------------------------------------------------
+
+-->
