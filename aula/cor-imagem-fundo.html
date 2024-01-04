@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cor e Imagem</title>
+	<style type="text/css">
+		/*.fundo {
+			background-color: #f2f2f2;		cor de fundo
+			color: pink						cor do texto
+		}*/
+		body {
+			background-image: url('img/yoshi.png');
+			background-repeat: no-repeat; /* no-repeat, repeat, repeat-x, repeat-y */
+			background-attachment: fixed; /* fixed, scroll */
+			background-position: center center;  /* center, left, right (horizontal) / center, bottom, top (vertical) */
+		}
+		.fundo {
+			background: blue url('img/yoshi.png') no-repeat fixed center center;
+		}
+	</style>
+</head>
+<body class="fundo">
+	<h1 >Conteúdo de título 1</h1>
+</body>
+</html>
