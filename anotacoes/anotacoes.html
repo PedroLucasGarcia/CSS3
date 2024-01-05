@@ -38,10 +38,9 @@ p = seletor - O início do conjunto de regras usado para definir o elemento que 
 				   declarações CSS.
 }
 
-color: blue; = declaração - O nome do grupo para um par de propriedade e valor que aplica um estilo 							ao elemento selecionado.
+color: blue; = declaração - O nome do grupo para um par de propriedade e valor que aplica um estilo ao elemento selecionado.
 
-color: = propriedade - A primeira parte da declaração que indica qual característica visual do 
-					   elemento deve ser modificada.
+color: = propriedade - A primeira parte da declaração que indica qual característica visual do elemento deve ser modificada.
 
 blue; = valor - A segunda parte da declaração que significa o valor da propriedade.
 
@@ -165,6 +164,8 @@ Imagem:
 Para aplicar uma imagem de fundo:
 background-image: url('caminho/da.imagem');
 
+(Se a imagem estiver em uma outra pasta colocar ../)
+
 Para definir como vai ser a repetição:
 backgrund-repeat:(no-repeat, repeat, repeat-x e repeat-y);
 
@@ -197,13 +198,44 @@ A ordem dos valores é: top, right, bottom e left.
 margin: ; - Aplica um espaçamento externo
 
 Forma específica de aplicar o margin:
-margin-top: ; 		- Aplica espaçamento superior		margin-right: ; 		- Aplica espaçamento direito
+margin-top: ; 		- Aplica espaçamento superior		margin-right: ; 	- Aplica espaçamento direito
 margin-bottom: ;	- Aplica espaçamento inferior		margin-left: ; 		- Aplica espaçamento esquerdo
 
-Forma geral de aplicar padding:
+Forma geral de aplicar margin:
 margin:(valor(es));
 A ordem dos valores é: top, right, bottom e left.
 
 ----------------------------------------------------------------------------------------------------
+
+Elementos flutuantes:
+
+float: ; - Quando usamos float, criamos um fluxo diferenciado e faz com que o conteúdo saia do seu fluxo padrão e flutue a esquerda ou a direita.
+(OBS: Elementos flutuantes ficam sobreposto aos outros conteúdos que estão em seu fluxo normal(padrão))
+
+Os valores de float podem ser: left, right e none
+
+clear: ; - Limpa o fluxo flutuante
+
+Os valores de clear podem ser: left, right, both e none
+
+Para utilizar uma cor/imagem de fundo para as caixas flutuantes é necessário usar o clear limpar o fluxo e aplicar a cor/imagem.
+<div class="clear"></div> - Pode ser uma div vazia para apenas limpar o fluxo.
+
+----------------------------------------------------------------------------------------------------
+
+Elementos inline, block e inline-block:
+
+Inline - Elementos inline tem uma largura de acordo com seu conteúdo e fica um a frente do outro.
+(EXEMPLO: <a>, <span>, <img>, display: inline;)
+
+Block - Elementos block tem uma largura que ocupa todo o espaçamento da tela e fica um a baixo do outro.
+(EXEMPLO: <h1>, <p>, <table>, display: block;)
+
+Inline-block - Elementos inline-block tem a largura de acordo com seu conteúdo e fica um a baixo do outro.
+(EXEMPLO: display: inline-block;)
+
+----------------------------------------------------------------------------------------------------
+
+
 
 -->
