@@ -1,0 +1,10 @@
+/* MODELO DE CAIXA */
+.conteudo {
+    border: 1px solid red;
+    /*paddin- top, rigth, bottom e left*/
+    padding: 20px;
+    /*margin- top, rigth, bottom e left*/
+    margin: 20px;
+    width: 150px;
+
+}
