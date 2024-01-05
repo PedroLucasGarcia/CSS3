@@ -1,10 +1,54 @@
 /* MODELO DE CAIXA */
-.conteudo {
+/*.conteudo {
     border: 1px solid red;
-    /*paddin- top, rigth, bottom e left*/
+    /*paddin- top, right, bottom e left
     padding: 20px;
-    /*margin- top, rigth, bottom e left*/
+    /*margin- top, right, bottom e left
     margin: 20px;
     width: 150px;
 
+}*/
+/*------------------------------------------------------------------------------------------------*/
+/* ELEMENTOS FLUTUANTES */
+/*#principal {
+    border: 1px solid red;
+    background: green;
+}
+.conteudo {
+    background: blue;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    float: left;
+
+}
+.clear {
+    clear: both; /*left, right, both e none
+}*/
+/*------------------------------------------------------------------------------------------------*/
+/* ELEMENTOS FLUTUANTES NA PRÁTICA */
+body {
+    background: #f4f4f4;
+}
+
+#principal {
+    width: 920px;
+}
+.noticia {
+    background: #e5e5e5;
+    padding: 5px;
+    width: 280px;
+    margin: 7px;
+    float: left;
+}
+.imagem-galeria {
+    background: white;
+    padding: 5px;
+    width: 265px;
+    margin: 15px;
+    float: left;
+}
+.clear {
+    clear: both;
 }
