@@ -28,7 +28,7 @@
 }*/
 /*------------------------------------------------------------------------------------------------*/
 /* ELEMENTOS FLUTUANTES NA PRÁTICA */
-body {
+/*body {
     background: #f4f4f4;
 }
 
@@ -51,4 +51,46 @@ body {
 }
 .clear {
     clear: both;
+}*/
+/*------------------------------------------------------------------------------------------------*/
+/* POSICIONAMENTO STATIC, RELATIVE, ABSOLUTE FIXED*/
+body {
+    background: #007fc7;
+}
+#container {
+    background: #FFF;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
+p {
+    width: 300px;
+}
+.static {
+    border: 1px solid blue;
+    position: static        /*posicionamento static(padrão)*/
+}
+.relative {
+    border: 1px solid red;
+    position: relative;     /*posicionamento relativo (top, right, bottom, left)
+    /*top: 20px;            desce 20px da sua posição inicial
+    left: 80px;             move 80px para direita da sua posição inicial
+    bottom: 10px;           sobe 10px da sua posição inicial
+    right: 40px;            move 40px para esquerda da sua posição inicial*/
+}
+.absolute {
+    border: 1px solid green;
+    background: #f2f2f2;
+    position: absolute;     /*posicionamento absolute*/
+    top: 80px;
+    right: 80px;
+}
+.fixed {
+    border: 1px solid yellow;
+    background: #f2f2f2;
+    margin: 0px;
+    position: fixed;        /*posicionamento fixed*/
+    bottom: 0px;
+    right: 0px;
 }
