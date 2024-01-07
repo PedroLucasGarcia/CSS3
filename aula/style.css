@@ -54,7 +54,7 @@
 }*/
 /*------------------------------------------------------------------------------------------------*/
 /* POSICIONAMENTO STATIC, RELATIVE, ABSOLUTE FIXED*/
-body {
+/*body {
     background: #007fc7;
 }
 #container {
@@ -69,7 +69,7 @@ p {
 }
 .static {
     border: 1px solid blue;
-    position: static        /*posicionamento static(padrão)*/
+    position: static        /*posicionamento static(padrão)
 }
 .relative {
     border: 1px solid red;
@@ -77,12 +77,12 @@ p {
     /*top: 20px;            desce 20px da sua posição inicial
     left: 80px;             move 80px para direita da sua posição inicial
     bottom: 10px;           sobe 10px da sua posição inicial
-    right: 40px;            move 40px para esquerda da sua posição inicial*/
+    right: 40px;            move 40px para esquerda da sua posição inicial
 }
 .absolute {
     border: 1px solid green;
     background: #f2f2f2;
-    position: absolute;     /*posicionamento absolute*/
+    position: absolute;     /*posicionamento absolute
     top: 80px;
     right: 80px;
 }
@@ -90,7 +90,56 @@ p {
     border: 1px solid yellow;
     background: #f2f2f2;
     margin: 0px;
-    position: fixed;        /*posicionamento fixed*/
+    position: fixed;        /*posicionamento fixed
     bottom: 0px;
     right: 0px;
+}*/
+/*------------------------------------------------------------------------------------------------*/
+/* SOBREPONDO ELEMENTOS */
+/*.conteudo1 {
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;         /*sobreposição
 }
+.conteudo2 {
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 1;
+}
+.conteudo3 {
+    border: 1px solid red;
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 1;
+}*/
+/*------------------------------------------------------------------------------------------------*/
+/* FORMATANDO LINKS */
+/*a {
+    color: orange;      /*Links visitados(padrão), (quando temos visited que também é um link visitado, ele aplica o valor do visited)
+    padding: 5px 10px;
+    text-decoration: none;
+}
+a:link {
+    color: #b9c941;     /*Links não visitados
+}
+a:visited {
+    color: #c0c0c0;     /*Links visitados
+}
+a:hover {
+    color: #6d790f;     /*Links quando passamos o cursor(mouse) sobre ele
+}
+a:active {
+    color: #e4f371;     /*Links clicado
+}*/
