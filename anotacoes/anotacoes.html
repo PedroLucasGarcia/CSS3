@@ -131,21 +131,10 @@ em - tamanho relativo ao container pai (1em = tamanho do container pai)
 
 Estilos de Texto: https://www.w3schools.com/cssref/pr_font_font.php
 
-.negrito {
-font-weight: bold; (normal, bold e pode aplicar um valor vai de 100 até 900);
-}
-
-.italico {
-font-style: italic;
-}
-
-.formatacao {
-text-decoration: (underline, overline, line-through e none);
-}
-
-.texto {
-font: bold 40px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
+font-weight: bold; (normal, bold e pode aplicar um valor vai de 100 até 900); - Negrito
+font-style: italic; - Itálico
+text-decoration: (underline, overline, line-through e none); - Formatações
+font: bold 40px "Lucida Sans Unicode", "Lucida Grande", sans-serif; - Fontes
 
 ----------------------------------------------------------------------------------------------------
 
@@ -235,18 +224,44 @@ Inline-block - Elementos inline-block tem a largura de acordo com seu conteúdo 
 (EXEMPLO: display: inline-block;)
 
 ----------------------------------------------------------------------------------------------------
+
 Posicionamentos:
 
-static - É o posicionamento padrão.
+static - É o posicionamento padrão.A movimentação pode ser: (left, right, top ou bottom).
 
 relative - É o posicionamento que permite movimentar/deslocar a posição, baseado em sua posição inicial. A movimentação pode ser: (left, right, top ou bottom).
-(OBS: Só lê  até 2 valores de cada vez)
 
 absolute - Quando definimos uma posição absolute o elemento sai do fluxo padrão e não afeta a posição dos outros elementos. A movimentação pode ser: (left, right, top ou bottom).
 (A posição absoluta é calculada em relação ao container que ela está (desde de que seje diferente de static))
 
 fixed - Quando utilizamos um posicionamento fixed ele fica fixo em relação a janela do navegador. A movimentação pode ser: (left, right, top ou bottom).
 (Pode-se usar essa propriedade por exemplo para chats e menus)
+
+(OBS: Só lê até 2 valores de cada vez)
+
+----------------------------------------------------------------------------------------------------
+
+Sobrepondo elementos:
+
+z-index: ; - Define a ordem da sobreposição.
+
+Exemplo: z-index: 0; z-index: 1; , z-index: 2; , z-index: 3; ...
+
+(OBS: quanto maior for o número mais a frente ou em cima ele irá ficar.)
+
+(OBS: quando temos 2 z-index com o mesmo valor, ele seguirá a ordem do documento.)
+
+----------------------------------------------------------------------------------------------------
+
+Formatando links
+
+a: link - links não visitados
+a: visited - links visitados
+a: hover - links quando passamos o cursor (mouse) sobre ele
+a: active - links clicados
+
+OBS: quando quiser formatar 2 estados com as mesmas características, basta colocar o nome um ao lado do outro separados por vírgula.
+Exemplo: a:link, visited ...
 
 ----------------------------------------------------------------------------------------------------
 
