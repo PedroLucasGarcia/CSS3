@@ -185,7 +185,36 @@ h3+p {
     color: red;
 }*/
 
-/*seletor de irmão geral*/
+/*seletor de irmão geral
 h4~p {
     color: pink;
+}*/
+/*------------------------------------------------------------------------------------------------*/
+/* HERANÇA E ESPECIFICIDADE */
+/*HERANÇA*/
+/*body {
+    color: red;
+}*/
+
+/*ESPECIFICIDADE*/
+/*QUANDO A SELETORES IGUAIS O ÚTIMO SERÁ APLICADO, A MENOS QUE COLOQUEMOS UM !IMPORTANT*/
+/*p {
+    color: blue;
 }
+p {
+    color: green;
+}*/
+/*SEMPRE O SELETOR MAIS ESPECÍFICO SERÁ APLICADO*/
+/** {
+    color: red;
+}
+h2 {
+    color: blue;
+}
+h2.verde {
+    color: green;
+}
+h2#amarelo {
+    color: yellow;
+}*/
+/*------------------------------------------------------------------------------------------------*/
