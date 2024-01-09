@@ -143,3 +143,49 @@ a:hover {
 a:active {
     color: #e4f371;     /*Links clicado
 }*/
+/*------------------------------------------------------------------------------------------------*/
+/* SELETORES */
+
+/*Seletor universal
+* {
+    border: 1px solid red; 
+}*/
+
+/*Seletor de texto
+h1 {
+    color: blue;           
+}*/
+
+/*Seletor de classe
+.verde {
+    color: green;
+}
+p.verde {
+    color: green;
+}*/
+
+/*Seletor de id
+#cabecalho {
+    border: 1px solid blue;
+}*/
+
+/*seletor de filho
+li>a {
+    color: red;
+    text-decoration: none;
+}*/
+
+/*seletor de descedente
+p a {
+    color: green;
+}*/
+
+/*seletor de irmão adjacente
+h3+p {
+    color: red;
+}*/
+
+/*seletor de irmão geral*/
+h4~p {
+    color: pink;
+}
