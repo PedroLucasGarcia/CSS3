@@ -267,22 +267,55 @@ Exemplo: a:link, visited ...
 
 Seletores
 
-Seletor universal - Seleciona todos os elementos
+Seletor universal - Aplica-se em todos os elementos no documento
 
 * {
-			
+		Seleciona todos os elementos da página	
 }
 
-Seletor eepecífico - Seleciona(formata) os elementos que estiverem dentro dele
+Seletor de texto - Seleciona elementos pelo tipo (h1, h2, h3...)
 
-EXEMPLO:
-#area-cabecalho a:link, #area-cabecalho a:visited {
-	color: #fff;
+h1 {
+		Seleciona os elementos <h1>
 }
 
-Nesse caso, vai aplicar as formatações apenas para os links que estiverem dentro do id area-cabecalho.
-O seletor nesse caso permitiria que eu aplicasse outras formatações de links para o restante da página.
+Seletor de classe - Seleciona um elemento cujo atributo class tem o valor especificado depois do ponto
 
-EXEMPLO: 
+.verde {
+		Seleciona qualquer elemento cujo atributo class tem o valor "verde"
+}
+p.verde {
+		Seleciona somente elemento <p> cujo o atributo class tem o valor "verde"
+}
+
+Seletor de id - Seleciona um elemento cujo atributo id tem o valor especificado após o símbolo de cerquilha(jogo da velha)
+
+#cabecalho {
+		Seleciona o elemento cujo atributo id tem o valor "cabecalho"
+}
+
+Seletor de filho - Seleciona um elemento que é filho direto de outro
+
+li>a {
+		Seleciona quaisquer elementos <a> que são filhos de um elemento <li> (mas não os elementos <a> na página)
+}
+
+Seletor de descedente - Seleciona um elemento que é descedente de outro elemento especificado(e não apenas filho direto desse elemento)
+
+p a {
+		Seleciona quaisquer elementos <a> que residem dentro de um elemento <p>, mesmo que houver outros elementos aninhados entre eles
+}
+
+Seletor de irmão adjacente - Seleciona um elemento que é o irmão próximo de outro, precisa ser um elemento diretamente precedente(vir logo depois)
+
+h3+p {
+		Seleciona o primeiro elemento <p> depois de qualquer elemento <h3> (mas não os outros <p>)
+}
+
+Seletor de irmão geral - Seleciona um elemento que é um irmão de outro, embora ele não precise ser o elemento diretamente precedente
+
+h4~p {
+		Se houver dois elementos <p> que fossem irmãos de um elemento <h4> essa regra se aplicará aos dois
+}
 
 -->
