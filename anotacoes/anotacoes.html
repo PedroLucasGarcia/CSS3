@@ -4,7 +4,7 @@ Comentário CSS - /*  */
 
 ----------------------------------------------------------------------------------------------------
 
-Folhas de estilo:
+FOLHAS DE ESTILOS
 
 External style sheet - Coloca as formatações do site em um arquivo externo(recomendado).
 
@@ -25,7 +25,7 @@ Inline style - Aplica a formatação direto no elemento.
 
 ----------------------------------------------------------------------------------------------------
 
-Anatomia css:
+ANATOMIA CSS
 
 p {
 	color: blue; 
@@ -47,7 +47,7 @@ blue; = valor - A segunda parte da declaração que significa o valor da proprie
 
 ----------------------------------------------------------------------------------------------------
 
-Classes e Ids:
+CLASSES E IDS
 
 Classe - Podemos ter varias classes. 
 
@@ -76,7 +76,7 @@ id="principal"
 
 ----------------------------------------------------------------------------------------------------
 
-Divs e Span:
+DIVS E SPANS
 
 <div></div> - Essa tag cria uma divisão no site. Ela é um elemento do tipo block, ou seja, ocupa todo o espaçamento da tela(coloca os elementos um abaixo do outro).
 
@@ -84,7 +84,7 @@ Divs e Span:
 
 ----------------------------------------------------------------------------------------------------
 
-Bordas:
+BORDAS
 
 border: 1px solid red; - Ao utilizar a propriedade border, definimos 3 valores: espessura, tipo e cor.
 
@@ -99,7 +99,7 @@ border-color: red;			border-color: red green blue yellow;			border-color: red bl
 A ordem é: cima, direita, baixo e esquerda
 ----------------------------------------------------------------------------------------------------
 
-Fontes e Cores:
+FONTES E CORES
 
 Cores:
 
@@ -121,7 +121,7 @@ Link: https://www.w3schools.com/css/css_font.asp
 
 ----------------------------------------------------------------------------------------------------
 
-Tamanhos de textos:
+TAMANHOS DE TEXTO
 
 px - pixel = tamanho fixo (tamanho padrão = 16px)
 % - porcentagem = tamanho relativo, relativo ao tamanho padrão (100% do tamanho padrão = 16px)
@@ -129,7 +129,9 @@ em - tamanho relativo ao container pai (1em = tamanho do container pai)
 
 -----------------------------------------------------------------------------------------------------
 
-Estilos de Texto: https://www.w3schools.com/cssref/pr_font_font.php
+ESTILOS DE TEXTO
+
+Link: https://www.w3schools.com/cssref/pr_font_font.php
 
 font-weight: bold; (normal, bold e pode aplicar um valor vai de 100 até 900); - Negrito
 font-style: italic; - Itálico
@@ -138,7 +140,7 @@ font: bold 40px "Lucida Sans Unicode", "Lucida Grande", sans-serif; - Fontes
 
 ----------------------------------------------------------------------------------------------------
 
-Cor e Imagem:
+COR E IMAGEM
 
 Cor: https://www.w3schools.com/css/css_background.asp
 
@@ -172,7 +174,7 @@ background: blue url('img/yoshi.png') no-repeat fixed center center;
 
 ----------------------------------------------------------------------------------------------------
 
-Modelo de caixa:
+MODELO DE CAIXA
 
 padding: ; - Aplica um espaçamento interno
 
@@ -196,7 +198,7 @@ A ordem dos valores é: top, right, bottom e left.
 
 ----------------------------------------------------------------------------------------------------
 
-Elementos flutuantes:
+ELEMENTOS FLUTUANTES
 
 float: ; - Quando usamos float, criamos um fluxo diferenciado e faz com que o conteúdo saia do seu fluxo padrão e flutue a esquerda ou a direita.
 (OBS: Elementos flutuantes ficam sobreposto aos outros conteúdos que estão em seu fluxo normal(padrão))
@@ -212,7 +214,7 @@ Para utilizar uma cor/imagem de fundo para as caixas flutuantes é necessário u
 
 ----------------------------------------------------------------------------------------------------
 
-Elementos inline, block e inline-block:
+LEMENTOS INLINE, BLOCK E INLINE-BLOCK
 
 Inline - Elementos inline tem uma largura de acordo com seu conteúdo e fica um a frente do outro.
 (EXEMPLO: <a>, <span>, <img>, display: inline;)
@@ -225,7 +227,7 @@ Inline-block - Elementos inline-block tem a largura de acordo com seu conteúdo 
 
 ----------------------------------------------------------------------------------------------------
 
-Posicionamentos:
+POSICIONAMENTOS
 
 static - É o posicionamento padrão.A movimentação pode ser: (left, right, top ou bottom).
 
@@ -241,7 +243,7 @@ fixed - Quando utilizamos um posicionamento fixed ele fica fixo em relação a j
 
 ----------------------------------------------------------------------------------------------------
 
-Sobrepondo elementos:
+SOBREPONDO ELEMENTOS
 
 z-index: ; - Define a ordem da sobreposição.
 
@@ -253,7 +255,7 @@ Exemplo: z-index: 0; z-index: 1; , z-index: 2; , z-index: 3; ...
 
 ----------------------------------------------------------------------------------------------------
 
-Formatando links
+FORMATANDO LINKS
 
 a: link - links não visitados
 a: visited - links visitados
@@ -265,7 +267,7 @@ Exemplo: a:link, visited ...
 
 ----------------------------------------------------------------------------------------------------
 
-Seletores
+SELETORES
 
 Seletor universal - Aplica-se em todos os elementos no documento
 
@@ -317,5 +319,51 @@ Seletor de irmão geral - Seleciona um elemento que é um irmão de outro, embor
 h4~p {
 		Se houver dois elementos <p> que fossem irmãos de um elemento <h4> essa regra se aplicará aos dois
 }
+
+----------------------------------------------------------------------------------------------------
+
+HERANÇA E ESPECIFICIDADE
+
+Herança: Quando nenhum valor de uma propriedade herdada foi especificado em um elemento, o elemento obtém o valor computado desta propriedade em seu elemento pai.
+(border e background são exemplos de propriedades não herdadas)
+
+body {
+	color: red;
+}
+
+Especificidade: A especificação é a maneira de como os navegadores definem quais valores de propriedades são os mais relevantes para o elemento a ser utilizado.
+
+Quando há dois seletores iguais, sempre o último vai se aplicado, a menos que adicionemos um !important
+
+p {
+	color: blue;
+}
+p {
+	color: green; 					irá aplicar essa propriedade
+}
+
+p {
+	color: blue !important;			irá aplicar essa propriedade
+}
+p {
+	color: green; 	
+}
+
+Se um seletor for mais específicoque outro, a regra mais específica será aplicada
+
+* {
+	color: red
+}
+h2 {
+	color: blue
+}
+h2#amarelo {
+	color: yellow			    	irá aplicar essa propriedade pois o id nesse caso é o mais específico
+}
+h2.verde {
+	color: green
+}
+
+----------------------------------------------------------------------------------------------------
 
 -->
