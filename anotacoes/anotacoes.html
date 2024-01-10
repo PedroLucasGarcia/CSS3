@@ -448,16 +448,18 @@ a:hover {
 }
 ----------------------------------------------------------------------------------------------------
 
-/* MARCANDO PÁGINA ATUAL */
+MARCANDO PÁGINA ATUAL
 
-UTILIZANDO UMA CLASSE*/
+UTILIZANDO UMA CLASSE:
+
 a:hover, .selecionado a {
     background-position: right bottom;	Muda a posição do background
     background-color: #f99200;          Caso a imagem não carregue
     color: #FFF;
 }
 
-OUTRA FORMA DE MARCAR UMA PÁGINA (RECOMENDADO)
+OUTRA FORMA DE MARCAR UMA PÁGINA (RECOMENDADO): 
+
 #home #navegacao .home a {
     background-position: right bottom;	Muda a posição do background
     background-color: #f99200;          Caso a imagem não carregue
@@ -466,7 +468,7 @@ OUTRA FORMA DE MARCAR UMA PÁGINA (RECOMENDADO)
 
 ----------------------------------------------------------------------------------------------------
 
-/* BARRA DE NAVEGAÇÃO HORIZONTAL */
+BARRA DE NAVEGAÇÃO HORIZONTAL
 
 ul {
     margin: 0;
@@ -487,6 +489,9 @@ ul a {
     color: #FFF;
     background: url(img/divisor.png) repeat-y;
 }
+
+MARCANDO PÁGINA:
+
 ul .primeiro a {
     background: none;
 }
@@ -497,5 +502,36 @@ ul .primeiro a {
 
 ----------------------------------------------------------------------------------------------------
 
+BARRA DE NAVEGAÇÃO COM ABAS
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: auto;
+}
+ul li {
+    float: left;
+    background: url(img/aba-direita.png) no-repeat top right;
+} 
+li a {
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(img/aba-esquerda.png) no-repeat top left;
+    color: #fff;
+}
+ul a:hover {
+    color: #894a1f;
+}
+
+MARCANDO PÁGINA:
+
+ul #atual {
+    background: url(img/aba-direita-atual.png) no-repeat top right;
+}
+ul #atual a {
+    background: url(img/aba-esquerda-atual.png) no-repeat top left;
+}
 -->
