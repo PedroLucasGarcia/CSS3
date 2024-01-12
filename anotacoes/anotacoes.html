@@ -385,52 +385,6 @@ ul {
 	list-style-type: none;
 }
 ul a {
-    width: 200px;               		Largura
-    height: 40px;               		Altura
-    display: block;
-    color: #000;
-    text-decoration: none;			
-    text-indent: 40px;					Indenta o texto
-    line-height: 40px;          		Define a altura de uma caixa de linha, soma caso já tenha um height
-    background: #f7b600 url(img/menu.png);
-}
-
-a:hover {
-    background-position: right bottom;	Muda a posição do background
-    background-color: #f99200;        	Caso a imagem não carregue
-    color: #FFF;
-}
-
-----------------------------------------------------------------------------------------------------
-
-MARCANDO PÁGINA ATUAL
-
-UTILIZANDO UMA CLASSE:
-
-a:hover, .selecionado a {
-    background-position: right bottom;	Muda a posição do background
-    background-color: #f99200;          Caso a imagem não carregue
-    color: #FFF;
-}
-
-OUTRA FORMA DE MARCAR UMA PÁGINA (RECOMENDADO):
-
-#home #navegacao .home a {
-    background-position: right bottom;	Muda a posição do background
-    background-color: #f99200;        	Caso a imagem não carregue
-    color: #FFF;
-}
-
-----------------------------------------------------------------------------------------------------
-
-BARRA DE NAVEGAÇÃO VERTICAL
-
-ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-ul a {
     width: 200px;               	    Largura
     height: 40px;               	    Altura
     display: block;
@@ -534,4 +488,14 @@ ul #atual {
 ul #atual a {
     background: url(img/aba-esquerda-atual.png) no-repeat top left;
 }
+
+----------------------------------------------------------------------------------------------------
+
+LAYOUT FIXO
+
+A página tem um tamanho fixo. 
+(Vantagem: tem mais controle de como o conteúdo da página irá aparecer)
+(Desvantagem: não se adapta a diferentes telas. EX: celular, tablet, pc. Sempre vai ser o mesmo tamanho, não importa qual o tamanho da sua tela)
+
+----------------------------------------------------------------------------------------------------
 -->
