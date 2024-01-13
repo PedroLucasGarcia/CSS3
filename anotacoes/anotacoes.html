@@ -76,6 +76,40 @@ id="principal"
 
 ----------------------------------------------------------------------------------------------------
 
+COR, IMAGEM, BACKGROUND, OPACIDADE
+
+Cor: https://www.w3schools.com/css/css_background.asp
+
+color: ; - Aplica uma cor a um texto
+
+background-color - Essa propriedade aplica uma cor de fundo de um elemento.
+
+opacity - Essa propriedade aplica uma opacidade/transparência a um elemento. Pode assumir um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente.
+Formas de aplicar opacidade:
+opacity: 0,3;
+background: rgba(red, green, blue, alpha(opacidade));
+
+background-image - Essa propriedade aplica uma imagem como plano de fundo de um elemento.
+Forma de aplicar imagem:
+background-image: url("caminho da imagem");
+(Se a imagem estiver em uma outra pasta colocar ../)
+
+backgrund-repeat:(no-repeat, repeat, repeat-x e repeat-y); - Define se vai ter repetição e como vai ser essa repetição
+
+background-attachment:(fixed, scroll); -  Especifica se a imagem de fundo deve rolar ou ser fixa
+
+background-position:(center, left, right); - Define uma posição
+(pode ter 2 valores, o primeiro é na horizontal e o segundo é na vestical)
+
+Abreviação do background - Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+background-color, background-image, background-repeat, background-attachment, background-position
+EX: background: blue url("caminho-da-imagem") no-repeat fixed center center;
+
+background: linear-gradient(to bottom, #cor, #cor); - Aplica um gradiente(degradê)
+
+(OBS: Aplicar por exemplo uma cor e uma imagem de fundo, é útil pois caso a imagem não carregue nos certificamos que pelo menos a cor irá aparecer)
+----------------------------------------------------------------------------------------------------
+
 DIVS E SPANS
 
 <div></div> - Essa tag cria uma divisão no site. Ela é um elemento do tipo block, ou seja, ocupa todo o espaçamento da tela(coloca os elementos um abaixo do outro).
@@ -97,6 +131,8 @@ border-style: solid;		border-style: solid dotted dashed double;		border-style: s
 border-color: red;			border-color: red green blue yellow;			border-color: red blue;
 
 A ordem é: cima, direita, baixo e esquerda
+
+border-radius: ; - Aplica um arrendonamento nas bordas
 ----------------------------------------------------------------------------------------------------
 
 FONTES E CORES
@@ -129,6 +165,27 @@ em - tamanho relativo ao container pai (1em = tamanho do container pai)
 
 -----------------------------------------------------------------------------------------------------
 
+ALTURA E LARGURA 
+
+width - Largura
+min-width - Largura mínima
+max-width - Largura máxima
+height - Altura
+min-height - Altura mínima
+max-heigt - Altura máxima
+
+Valores de altura e largura CSS
+
+As propriedades heighte widthpodem ter os seguintes valores:
+
+auto- Este é o padrão. O navegador calcula a altura e a largura
+length- Define a altura/largura em px, cm, etc.
+%- Define a altura/largura em porcentagem do bloco que contém
+initial- Define a altura/largura para seu valor padrão
+inherit- A altura/largura será herdada de seu valor pai
+
+-----------------------------------------------------------------------------------------------------
+
 ESTILOS DE TEXTO
 
 Link: https://www.w3schools.com/cssref/pr_font_font.php
@@ -136,46 +193,12 @@ Link: https://www.w3schools.com/cssref/pr_font_font.php
 font-weight: bold; (normal, bold e pode aplicar um valor vai de 100 até 900); - Negrito
 font-style: italic; - Itálico
 text-decoration: (underline, overline, line-through e none); - Formatações
+text-transform: ; - (capitalize - primeira letra maiúscula), (lowercase - todas as letras minúsculas) e (uppercase - todas as letras maiúsculas)
 text-indent: ; - Indenta um texto
+text-align: ; - Alinha um texto (left, center ou right)
 font: bold 40px "Lucida Sans Unicode", "Lucida Grande", sans-serif; - Fontes
 line height: = Define a altura de uma caixa de linha. É comumente usado para definir a distância entre linhas de texto.
-
-
-----------------------------------------------------------------------------------------------------
-
-COR E IMAGEM
-
-Cor: https://www.w3schools.com/css/css_background.asp
-
-Para aplicar uma cor para o fundo:
-background-color: cor;
-
-Para aplicar uma cor para o texto:
-color: cor;
-
-Imagem:
-
-Para aplicar uma imagem de fundo:
-background-image: url('caminho/da.imagem');
-background: url(caminho da imagem);
-
-(Se a imagem estiver em uma outra pasta colocar ../)
-
-Para definir como vai ser a repetição:
-backgrund-repeat:(no-repeat, repeat, repeat-x e repeat-y);
-
-Formatações da imagem de fundo, se ela permanece fixa ou não:
-background-attachment:(fixed, scroll);
-
-Para definir uma posição:
-background-position:(center, left, right); 
-(pode ter 2 valores, o primeiro é na horizontal e o segundo é na vestical)
-
-
-Para aplicar várias propriedades:
-background: blue url('img/yoshi.png') no-repeat fixed center center;
-(Ordem: cor, imagem, repetição, attachment e posição)
-(Aplicar por exemplo uma cor e uma imagem de fundo, é útil pois caso a imagem não carregue nos certificamos que pelo menos a cor irá aparecer)
+letter-spacing: ; - Espaçamento das letras
 
 ----------------------------------------------------------------------------------------------------
 
@@ -325,6 +348,12 @@ h4~p {
 		Se houver dois elementos <p> que fossem irmãos de um elemento <h4> essa regra se aplicará aos dois
 }
 
+Seletor de atributo - Seleciona apenas o(os) elementos que tem esse atributo
+
+input[type="text"] {
+        Aplica apenas para o atributo text
+}
+
 ----------------------------------------------------------------------------------------------------
 
 HERANÇA E ESPECIFICIDADE
@@ -376,6 +405,8 @@ LISTAS - UL E LI
 list-style-tipe: ; - Tira o estilo da lista
 
 ----------------------------------------------------------------------------------------------------
+
+BARRA DE NAVEGAÇÃO = LISTA DE LINKS
 
 BARRA DE NAVEGAÇÃO VERTICAL
 
@@ -496,6 +527,26 @@ LAYOUT FIXO
 A página tem um tamanho fixo. 
 (Vantagem: tem mais controle de como o conteúdo da página irá aparecer)
 (Desvantagem: não se adapta a diferentes telas. EX: celular, tablet, pc. Sempre vai ser o mesmo tamanho, não importa qual o tamanho da sua tela)
+(OS VALORES SÃO EM PX)
+----------------------------------------------------------------------------------------------------
+
+LAYOUT LÍQUIDO
+
+A página tem um tamanho mais adaptativo (se adapta ao tamanho do browser e não ao tamanho de diferentes dispositivos(tela))
+(NÃO É O MESMO QUE RESPONSIVO)
+(OS VALORES SÃO EM %)
 
 ----------------------------------------------------------------------------------------------------
+
+TABELAS
+
+tr - linha da tabela(linha)
+th - cabeçalho da tabela(título) 
+td - dados da tabela(coluna) 
+
+border-collapse: ; = Borda da tabela - collapse ou separete(padrão)
+
+----------------------------------------------------------------------------------------------------
+
+cursor: pointer
 -->
