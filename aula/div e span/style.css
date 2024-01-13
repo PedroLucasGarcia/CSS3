@@ -1,0 +1,28 @@
+/*DIVS E SPANS
+
+<div></div> - Essa tag cria uma divisão no site. Ela é um elemento do tipo block, ou seja, ocupa todo o espaçamento da tela(coloca os elementos um abaixo do outro).
+
+<span></span> - Essa tag tem a mesma dunção de uma div, a diferença é que ela é um elemento do tipo inline, ou seja, ele agrupa os elementos linha a linha(colocas os elementos um a frente do outro). A span é recomendada para fazer formatações de texto.*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#topo {
+    background: blue;
+}
+
+#conteudo {
+    background: red;
+}
+
+#rodape {
+    background: green;
+}
+
+.produto {
+    background: gray;
+    margin: 10px;
+}
+
+.azul {
+    color: blue;
+}

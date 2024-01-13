@@ -1,0 +1,56 @@
+/*POSICIONAMENTOS
+
+static - É o posicionamento padrão.A movimentação pode ser: (left, right, top ou bottom).
+
+relative - É o posicionamento que permite movimentar/deslocar a posição, baseado em sua posição inicial. A movimentação pode ser: (left, right, top ou bottom).
+
+absolute - Quando definimos uma posição absolute o elemento sai do fluxo padrão e não afeta a posição dos outros elementos. A movimentação pode ser: (left, right, top ou bottom).
+(A posição absoluta é calculada em relação ao container que ela está (desde de que seje diferente de static))
+
+fixed - Quando utilizamos um posicionamento fixed ele fica fixo em relação a janela do navegador. A movimentação pode ser: (left, right, top ou bottom).
+(Pode-se usar essa propriedade por exemplo para chats e menus)
+
+(OBS: Só lê até 2 valores de cada vez)*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+body {
+    background: #007fc7;
+}
+#container {
+    background: #FFF;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
+p {
+    width: 300px;
+}
+.static {
+    border: 1px solid blue;
+    position: static        /*posicionamento static(padrão)*/
+}
+.relative {
+    border: 1px solid red;
+    position: relative;     /*posicionamento relativo (top, right, bottom, left)*/
+                            /*top: 20px;            desce 20px da sua posição inicial
+                            left: 80px;             move 80px para direita da sua posição inicial
+                            bottom: 10px;           sobe 10px da sua posição inicial
+                            right: 40px;            move 40px para esquerda da sua posição inicial*/
+}
+.absolute {
+    border: 1px solid green;
+    background: #f2f2f2;
+    position: absolute;     /*posicionamento absolute*/
+    top: 80px;
+    right: 80px;
+}
+.fixed {
+    border: 1px solid yellow;
+    background: #f2f2f2;
+    margin: 0px;
+    position: fixed;        /*posicionamento fixed*/
+    bottom: 0px;
+    right: 0px;
+}

@@ -1,0 +1,25 @@
+/*BORDAS
+
+border: 1px solid red; - Ao utilizar a propriedade border, definimos 3 valores: espessura, tipo e cor.
+
+Tipos de borda - https://www.w3schools.com/css/css_border.asp
+
+Outra forma de aplicar bodas é fazer de forma separada. A vantagem é que temos um controle maior da borda, podendo aplicar formatações de forma separada para cada extremidade da borda ou 2 formatações.
+
+border-width: 1px;			border-width: 1px 2px 3px 4px; 					border-width: 2px 4px;			
+border-style: solid;		border-style: solid dotted dashed double;		border-style: solid dotted;
+border-color: red;			border-color: red green blue yellow;			border-color: red blue;
+
+A ordem é: cima, direita, baixo e esquerda
+
+border-radius: ; - Aplica um arrendonamento nas bordas
+
+border-collapse: ; - Borda da tabela - collapse ou separete(padrão)*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#conteudo {
+    border-width: 5px 10px 15px 20px;
+    border-style: solid dotted dashed double;
+    border-color: red green blue yellow;
+}

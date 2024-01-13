@@ -1,0 +1,105 @@
+/*SELETORES
+
+Seletor universal - Aplica-se em todos os elementos no documento
+
+* {
+		Seleciona todos os elementos da página	
+}
+
+Seletor de texto - Seleciona elementos pelo tipo (h1, h2, h3...)
+
+h1 {
+		Seleciona os elementos <h1>
+}
+
+Seletor de classe - Seleciona um elemento cujo atributo class tem o valor especificado depois do ponto
+
+.verde {
+		Seleciona qualquer elemento cujo atributo class tem o valor "verde"
+}
+p.verde {
+		Seleciona somente elemento <p> cujo o atributo class tem o valor "verde"
+}
+
+Seletor de id - Seleciona um elemento cujo atributo id tem o valor especificado após o símbolo de cerquilha(jogo da velha)
+
+#cabecalho {
+		Seleciona o elemento cujo atributo id tem o valor "cabecalho"
+}
+
+Seletor de filho - Seleciona um elemento que é filho direto de outro
+
+li>a {
+		Seleciona quaisquer elementos <a> que são filhos de um elemento <li> (mas não os elementos <a> na página)
+}
+
+Seletor de descedente - Seleciona um elemento que é descedente de outro elemento especificado(e não apenas filho direto desse elemento)
+
+p a {
+		Seleciona quaisquer elementos <a> que residem dentro de um elemento <p>, mesmo que houver outros elementos aninhados entre eles
+}
+
+Seletor de irmão adjacente - Seleciona um elemento que é o irmão próximo de outro, precisa ser um elemento diretamente precedente(vir logo depois)
+
+h3+p {
+		Seleciona o primeiro elemento <p> depois de qualquer elemento <h3> (mas não os outros <p>)
+}
+
+Seletor de irmão geral - Seleciona um elemento que é um irmão de outro, embora ele não precise ser o elemento diretamente precedente
+
+h4~p {
+		Se houver dois elementos <p> que fossem irmãos de um elemento <h4> essa regra se aplicará aos dois
+}
+
+Seletor de atributo - Seleciona apenas o(os) elementos que tem esse atributo
+
+input[type="text"] {
+        Aplica apenas para o atributo text
+}*/
+
+/*------------------------------------------------------------------------------------------------*/
+/*Seletor universal*/
+* {
+    border: 1px solid red; 
+}*/
+
+/*Seletor de texto*/
+h1 {
+    color: blue;           
+}*/
+
+/*Seletor de classe*/
+.verde {
+    color: green;
+}
+p.verde {
+    color: green;
+}*/
+
+/*Seletor de id*/
+#cabecalho {
+    border: 1px solid blue;
+}*/
+
+/*seletor de filho*/
+li>a {
+    color: red;
+    text-decoration: none;
+}*/
+
+/*seletor de descedente*/
+p a {
+    color: green;
+}*/
+
+/*seletor de irmão adjacente*/
+h3+p {
+    color: red;
+}*/
+
+/*seletor de irmão geral*/
+h4~p {
+    color: pink;
+}
+
+/*seletor de atributo*/

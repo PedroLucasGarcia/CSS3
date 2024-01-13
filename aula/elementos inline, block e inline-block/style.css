@@ -1,0 +1,37 @@
+/*ELEMENTOS INLINE, BLOCK E INLINE-BLOCK
+
+Inline - Elementos inline tem uma largura de acordo com seu conteúdo e fica um a frente do outro.
+(EXEMPLO: <a>, <span>, <img>, display: inline;)
+
+Block - Elementos block tem uma largura que ocupa todo o espaçamento da tela e fica um a baixo do outro.
+(EXEMPLO: <h1>, <p>, <table>, display: block;)
+
+Inline-block - Elementos inline-block tem a largura de acordo com seu conteúdo e fica um a baixo do outro.
+(EXEMPLO: display: inline-block;)
+
+/*----------------------------------------------------------------------------------------------------*/
+
+h1 {
+    border: 1px solid red;
+    display: block;         /*por padrão já é um elemento block*/
+}
+h2 {
+    border: 1px solid red;
+    display: inline;        /*transforma o h2 que é um elemento block em um elemento inline*/
+}
+h3 {
+    border: 1px solid red;
+    display: inline-block;  /*transforma o h3 que é um elemento block em um elemento inline-block*/
+}
+span {
+    border: 1px solid red;
+    display: inline;        /*por padrão já é um elemento inline*/ 
+}
+span.block {
+    border: 1px solid red;
+    display: block;         /*transforma o span que é um elemento inline em um elemento block*/
+}
+span.inline-block {
+    border: 1px solid red;
+    display: inline-block;  /*transforma o span que é um elemento inline em um elemento inline-block*/
+}

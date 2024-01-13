@@ -1,0 +1,31 @@
+/*MODELO DE CAIXA
+
+padding: ; - Aplica um espaçamento interno
+
+Forma específica de aplicar o padding:
+padding-top: ; 		- Aplica espaçamento superior		padding-right: ; 		- Aplica espaçamento direito
+padding-bottom: ;	- Aplica espaçamento inferior		padding-left: ; 		- Aplica espaçamento esquerdo
+
+Forma geral de aplicar padding:
+pading:(valor(es));
+A ordem dos valores é: top, right, bottom e left.
+
+margin: ; - Aplica um espaçamento externo
+
+Forma específica de aplicar o margin:
+margin-top: ; 		- Aplica espaçamento superior		margin-right: ; 	- Aplica espaçamento direito
+margin-bottom: ;	- Aplica espaçamento inferior		margin-left: ; 		- Aplica espaçamento esquerdo
+
+Forma geral de aplicar margin:
+margin:(valor(es));
+A ordem dos valores é: top, right, bottom e left.*/
+
+/*------------------------------------------------------------------------------------------------*/
+
+.conteudo {
+    border: 1px solid red;
+    padding: 20px;          /*paddin- top, right, bottom e left*/
+    margin: 20px;           /*margin- top, right, bottom e left*/
+    width: 150px;
+
+}

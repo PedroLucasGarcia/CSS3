@@ -1,0 +1,43 @@
+/*CLASSES E IDS
+
+Classe - Podemos ter varias classes. 
+
+Como utilizar uma classe:
+.azul {
+	color: blue;
+} 		
+
+. = Define que é uma classe | azul = Nome da classe.
+
+Como chamar uma classe:
+class="azul"
+
+
+Id - Podemos ter somente um id. 
+
+Como utilizar um id:
+#principal {
+	background: gray;
+}		
+
+# = Define que é um id | principal = Nome do id.
+
+Como chamar um id:
+id="principal"*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+p {
+    color: red;
+}
+h1 {
+    color: blue;
+}
+
+.azul {                 /* Classe */
+    color: gray;
+}
+
+#verde {                /* Id */
+    color: green;
+}

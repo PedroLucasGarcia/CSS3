@@ -1,0 +1,40 @@
+/*SOBREPONDO ELEMENTOS
+
+z-index: ; - Define a ordem da sobreposição.
+
+Exemplo: z-index: 0; z-index: 1; , z-index: 2; , z-index: 3; ...
+
+(OBS: quanto maior for o número mais a frente ou em cima ele irá ficar.)
+
+(OBS: quando temos 2 z-index com o mesmo valor, ele seguirá a ordem do documento.)*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.conteudo1 {
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;         /*sobreposição*/
+}
+.conteudo2 {
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 1;
+}
+.conteudo3 {
+    border: 1px solid red;
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 1;
+}

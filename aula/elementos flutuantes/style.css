@@ -1,0 +1,57 @@
+/*ELEMENTOS FLUTUANTES
+
+float: ; - Quando usamos float, criamos um fluxo diferenciado e faz com que o conteúdo saia do seu fluxo padrão e flutue a esquerda ou a direita.
+(OBS: Elementos flutuantes ficam sobreposto aos outros conteúdos que estão em seu fluxo normal(padrão))
+
+Os valores de float podem ser: left, right e none
+
+clear: ; - Limpa o fluxo flutuante
+
+Os valores de clear podem ser: left, right, both e none
+
+Para utilizar uma cor/imagem de fundo para as caixas flutuantes é necessário usar o clear limpar o fluxo e aplicar a cor/imagem.
+<div class="clear"></div> - Pode ser uma div vazia para apenas limpar o fluxo.*/
+
+/*----------------------------------------------------------------------------------------------------*/
+/*#principal {
+    border: 1px solid red;
+    background: green;
+}
+.conteudo {
+    background: blue;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    float: left;
+
+}
+.clear {
+    clear: both; /*left, right, both e none
+}*/
+/*------------------------------------------------------------------------------------------------*/
+/* ELEMENTOS FLUTUANTES NA PRÁTICA */
+body {
+    background: #f4f4f4;
+}
+
+#principal {
+    width: 920px;
+}
+.noticia {
+    background: #e5e5e5;
+    padding: 5px;
+    width: 280px;
+    margin: 7px;
+    float: left;
+}
+.imagem-galeria {
+    background: white;
+    padding: 5px;
+    width: 265px;
+    margin: 15px;
+    float: left;
+}
+.clear {
+    clear: both;
+}

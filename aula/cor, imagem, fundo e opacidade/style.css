@@ -1,0 +1,48 @@
+/*COR, IMAGEM, FUNDO(BACKGROUND), OPACIDADE
+
+Cor: https://www.w3schools.com/css/css_background.asp
+
+color: ; - Aplica uma cor a um texto
+
+background-color - Essa propriedade aplica uma cor de fundo de um elemento.
+
+opacity - Essa propriedade aplica uma opacidade/transparência a um elemento. Pode assumir um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente.
+Formas de aplicar opacidade:
+opacity: 0,3;
+background: rgba(red, green, blue, alpha(opacidade));
+
+background-image - Essa propriedade aplica uma imagem como plano de fundo de um elemento.
+Forma de aplicar imagem:
+background-image: url("caminho da imagem");
+(Se a imagem estiver em uma outra pasta colocar ../)
+
+backgrund-repeat:(no-repeat, repeat, repeat-x e repeat-y); - Define se vai ter repetição e como vai ser essa repetição
+
+background-attachment:(fixed, scroll); -  Especifica se a imagem de fundo deve rolar ou ser fixa
+
+background-position:(center, left, right); - Define uma posição
+(pode ter 2 valores, o primeiro é na horizontal e o segundo é na vestical)
+
+Abreviação do background - Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+background-color, background-image, background-repeat, background-attachment, background-position
+EX: background: blue url("caminho-da-imagem") no-repeat fixed center center;
+
+background: linear-gradient(to bottom, #cor, #cor); - Aplica um gradiente(degradê)
+
+(OBS: Aplicar por exemplo uma cor e uma imagem de fundo, é útil pois caso a imagem não carregue nos certificamos que pelo menos a cor irá aparecer)*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/*.fundo {
+	background-color: #f2f2f2;		cor de fundo
+	color: pink						cor do texto
+}*/
+body {
+	background-image: url('../img/yoshi.png');
+	background-repeat: no-repeat; /* no-repeat, repeat, repeat-x, repeat-y */
+	background-attachment: fixed; /* fixed, scroll */
+	background-position: center center;  /* center, left, right (horizontal) / center, bottom, top (vertical) */
+}
+.fundo {
+	background: blue url('../img/yoshi.png') no-repeat fixed center center;
+}

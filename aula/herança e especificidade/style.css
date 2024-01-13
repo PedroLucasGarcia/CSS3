@@ -1,0 +1,71 @@
+/*HERANÇA E ESPECIFICIDADE
+
+Herança: Quando nenhum valor de uma propriedade herdada foi especificado em um elemento, o elemento obtém o valor computado desta propriedade em seu elemento pai.
+(border e background são exemplos de propriedades não herdadas)
+
+body {
+	color: red;
+}
+
+Especificidade: A especificação é a maneira de como os navegadores definem quais valores de propriedades são os mais relevantes para o elemento a ser utilizado.
+
+Quando há dois seletores iguais, sempre o último vai se aplicado, a menos que adicionemos um !important
+
+p {
+	color: blue;
+}
+p {
+	color: green; 					irá aplicar essa propriedade
+}
+
+p {
+	color: blue !important;			irá aplicar essa propriedade
+}
+p {
+	color: green; 	
+}
+
+Se um seletor for mais específicoque outro, a regra mais específica será aplicada
+
+* {
+	color: red
+}
+h2 {
+	color: blue
+}
+h2#amarelo {
+	color: yellow			    	irá aplicar essa propriedade pois o id nesse caso é o mais específico
+}
+h2.verde {
+	color: green
+}*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/*HERANÇA*/
+body {
+    color: red;         /*Todo o body herdardará essa propriedade*/
+}
+
+/*ESPECIFICIDADE*/
+/*QUANDO A SELETORES IGUAIS O ÚTIMO SERÁ APLICADO, A MENOS QUE COLOQUEMOS UM !IMPORTANT*/
+p {
+    color: blue;
+}
+p {
+    color: green;       /*Esse será aplicado pois foi o último aplicado*/
+}
+
+/*SEMPRE O SELETOR MAIS ESPECÍFICO SERÁ APLICADO*/
+* {
+    color: red;
+}
+h2 {
+    color: blue;
+}
+h2#amarelo {
+    color: yellow;      /*Esse será aplicado, pois é o mais específico*/
+}
+h2.verde {
+    color: green;
+}

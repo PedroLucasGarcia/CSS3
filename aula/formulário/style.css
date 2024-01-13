@@ -1,0 +1,27 @@
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+fieldset {
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    margin: 1em 0;
+}
+legend {
+    font-weight: bold;
+}
+label {
+    display: block;
+    cursor: pointer;
+}
+input[type="text"] {    /*Aplica apenas para o atributo text*/
+    width: 300px;
+}
+textarea {
+    width: 300px;
+    height: 10em;
+
+}
+.radio {
+    margin-right: 0.5em;
+}

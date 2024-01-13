@@ -1,0 +1,99 @@
+/*FONTES E CORES
+
+Cores:
+
+color: #E45281 - outra forma de colocar cor é usando os código exadecimal.
+
+Codigos de cores - https://html-color-codes.info/Codigos-de-Cores-HTML/
+
+Fontes:
+
+Tipos de fontes - https://www.w3schools.com/cssref/css_websafe_fonts.php
+
+font-size: = tamanho da imagem/texto
+
+font-family: = tipo de fonte. Pode ser serif, sans-serif ou Monospace e cada família possui outras fontes
+
+ex: font-family: "Times New Roman", Times, serif;  neste exemplo tem 2 fontes específicas e 1 fonte genérica. (obs: coloca-se em maiúsculo fontes específicas e quando for nome duplo(composto), colocamos "aspas").
+
+Link: https://www.w3schools.com/css/css_font.asp*/
+
+/*----------------------------------------------------------------------------------------------------*/
+/*TAMANHOS DE TEXTO
+
+px - pixel = tamanho fixo (tamanho padrão = 16px)
+% - porcentagem = tamanho relativo, relativo ao tamanho padrão (100% do tamanho padrão = 16px)
+em - tamanho relativo ao container pai (1em = tamanho do container pai)*/
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*ALTURA E LARGURA 
+
+width - Largura
+min-width - Largura mínima
+max-width - Largura máxima
+height - Altura
+min-height - Altura mínima
+max-heigt - Altura máxima
+
+Valores de altura e largura CSS
+
+As propriedades height width podem ter os seguintes valores:
+
+auto- Este é o padrão. O navegador calcula a altura e a largura
+length- Define a altura/largura em px, cm, etc.
+%- Define a altura/largura em porcentagem do bloco que contém
+initial- Define a altura/largura para seu valor padrão
+inherit- A altura/largura será herdada de seu valor pai*/
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*ESTILOS DE TEXTO
+
+Link: https://www.w3schools.com/cssref/pr_font_font.php
+
+font-weight: bold; (normal, bold e pode aplicar um valor vai de 100 até 900); - Negrito
+font-style: italic; - Itálico
+text-decoration: (underline, overline, line-through e none); - Formatações
+text-transform: ; - (capitalize - primeira letra maiúscula), (lowercase - todas as letras minúsculas) e (uppercase - todas as letras maiúsculas)
+text-indent: ; - Indenta um texto
+text-align: ; - Alinha um texto (left, center ou right)
+font: bold 40px "Lucida Sans Unicode", "Lucida Grande", sans-serif; - Fontes
+line height: = Define a altura de uma caixa de linha. É comumente usado para definir a distância entre linhas de texto.
+letter-spacing: ; - Espaçamento das letras*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+div {
+    font-size: 20px;
+}
+.formatacao {
+    color: #E45281;
+    font-size: 50px;
+    background: #A3E3FB;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tamanho {
+    /*	px - pixel = tamanho fixo (tamanho padrão = 16px)
+        % - porcentagem = tamanho relativo, relativo ao tamanho padrão (100% do tp = 16px)
+        em - tamanho relativo ao container pai (1em = tamanho do container pai)
+    */
+    font-size: 2em;
+}
+.negrito {
+    /* normal, bold 100 até 900 */
+    font-weight: bold;
+}
+.italico {
+    font-style: italic;
+}
+.decoracao {
+    /* underline, overline ou line-through */
+    text-decoration: underline;
+}
+.texto {
+    font: bold 20px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+} 
+
+img {
+    width: 500px;   /*Largura*/
+    height: 300px;  /*Altura*/
+}

@@ -1,0 +1,29 @@
+/*FORMATANDO LINKS
+
+a: link - links não visitados
+a: visited - links visitados
+a: hover - links quando passamos o cursor (mouse) sobre ele
+a: active - links clicados
+
+OBS: quando quiser formatar 2 estados com as mesmas características, basta colocar o nome um ao lado do outro separados por vírgula.
+Exemplo: a:link, visited ...*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+a {
+    color: orange;      /*Links visitados(padrão), (quando temos visited que também é um link visitado, ele aplica o valor do visited)*/
+    padding: 5px 10px;
+    text-decoration: none;
+}
+a:link {
+    color: #b9c941;     /*Links não visitados*/
+}
+a:visited {
+    color: #c0c0c0;     /*Links visitados*/
+}
+a:hover {
+    color: #6d790f;     /*Links quando passamos o cursor(mouse) sobre ele*/
+}
+a:active {
+    color: #e4f371;     /*Links clicado*/
+}
