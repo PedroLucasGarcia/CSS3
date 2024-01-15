@@ -1,38 +1,3 @@
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Página de login</title>
-</head>
-<body>
-    <div id="container">
-        <img src="img/perfil.png" alt="Imagem de perfil">
-
-        <form>
-            <div>
-                <label for="email"></label>
-                <input class="email" type="email" name="email" id="email" placeholder="Digite seu email">
-            </div>
-
-            <div>
-                <label for="senha"></label>
-                <input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha">
-            </div>
-
-            <div>
-                <label for="logar"></label>
-                <input class="submit" type="submit" value="Logar" id="logar">
-            </div>
-            <ul>
-                <li><a href="">Esqueci minha senha</a></li>
-            </ul>
-        </form>
-    </div>
-</body>
-</html>-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,24 +7,44 @@
     <title>Página de login</title>
 </head>
 <body>
+
+    <!--PRINCIPAL-->
     <div id="container">
-        <form action="/index.html">
+
+        <!--IMAGEM DE PERFIL-->
+        <img src="img/perfil.png" alt="Imagem de perfil">
+
+        <!--FORMULÁRIO-->
+        <form action="">
+
+            <!--CAMPO DE EMAIL-->
             <div>
                 <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email">
+                <input class="email" type="email" name="email" id="email" placeholder="Digite seu email">
             </div>
+
+            <!--CAMPO DE SENHA-->
             <div>
-                <label for="senha"></label>
-                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <label for="senha"></label> 
+                <input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha">
             </div>
+
+            <!--CAMPO DO BOTÃO DE CONECTAR(LOGAR)-->
             <div>
                 <label for="submit"></label>
-                <input type="submit" value="Conectar" id="submit">
+                <input class="submit" type="submit" value="Conectar" id="submit" title="Conectar">
             </div>
-            <ul>
-                <li><a href="">Esqueci minha senha</a></li>
-            </ul>
+
+            <!--CAMPO DE ESQUECI SENHA-->
+            <div>
+                <ul>
+                    <li><a href="" title="Esqueci minha senha">Esqueci minha senha</a></li>
+                </ul>
+            </div>
+
         </form>
-</div>
+
+    </div>
+
 </body>
 </html>
