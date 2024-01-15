@@ -7,25 +7,44 @@
     <title>Página de login</title>
 </head>
 <body>
-    <div id="container">
-        <img src="../img/perfil.png" alt="Imagem de perfil">
 
-        <form>
+    <!--PRINCIPAL-->
+    <div id="container">
+
+        <!--IMAGEM DE PERFIL-->
+        <img src="img/perfil.png" alt="Imagem de perfil">
+
+        <!--FORMULÁRIO-->
+        <form action="">
+
+            <!--CAMPO DE EMAIL-->
             <div>
                 <label for="email"></label>
                 <input class="email" type="email" name="email" id="email" placeholder="Digite seu email">
             </div>
 
+            <!--CAMPO DE SENHA-->
             <div>
-                <label for="senha"></label>
+                <label for="senha"></label> 
                 <input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha">
             </div>
 
+            <!--CAMPO DO BOTÃO DE CONECTAR(LOGAR)-->
             <div>
-                <label for="logar"></label>
-                <input class="submit" type="submit" value="Logar" id="logar">
+                <label for="submit"></label>
+                <input class="submit" type="submit" value="Conectar" id="submit" title="Conectar">
             </div>
+
+            <!--CAMPO DE ESQUECI SENHA-->
+            <div>
+                <ul>
+                    <li><a href="" title="Esqueci minha senha">Esqueci minha senha</a></li>
+                </ul>
+            </div>
+
         </form>
+
     </div>
+
 </body>
 </html>
