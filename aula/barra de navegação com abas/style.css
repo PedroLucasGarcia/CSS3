@@ -1,32 +1,33 @@
 /*BARRA DE NAVEGAÇÃO COM ABAS*/
-
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: auto;
+    margin: 0;                                                          /*ESPAÇAMENTO EXTERNO*/
+    padding: 0;                                                         /*ESPAÇAMENTO INTERNO*/
+    list-style: none;                                                   /*ESTILO DA LISTA*/
+    width: auto;                                                        /*LARGURA*/
 }
 ul li {
-    float: left;
-    background: url("../img/aba-direita.png") no-repeat top right;
+    float: left;                                                        /*FLUTAUNTE*/
+    background: url("../img/aba-direita.png") no-repeat top right;      /*FUNDO*/
 } 
 li a {
-    display: block;
-    padding: 0 2em;
-    line-height: 3em;
-    text-decoration: none;
-    background: url("../img/aba-esquerda.png") no-repeat top left;
-    color: #fff;
+    display: block;                                                     /*TRANSFORMA INLINE EM BLOCK*/
+    padding: 0 2em;                                                     /*ESPAÇAMENTO INTERNO*/
+    line-height: 3em;                                                   /*ALTURA DA LINHA DO TEXTO*/
+    text-decoration: none;                                              /*DECORAÇÃO DO TEXTO*/
+    background: url("../img/aba-esquerda.png") no-repeat top left;      /*FUNDO*/
+    color: #fff;                                                      /*COR*/
 }
+
+/*OUTRO ESTADO DA UL*/
 ul a:hover {
-    color: #894a1f;
+    color: #894a1f;                                                   /*COR*/
 }
 
 /*MARCANDO PÁGINA:*/
 
 ul #atual {
-    background: url("../img/aba-direita-atual.png") no-repeat top right;
+    background: url("../img/aba-direita-atual.png") no-repeat top right;/*FUNDO*/
 }
 ul #atual a {
-    background: url("../img/aba-esquerda-atual.png") no-repeat top left;
+    background: url("../img/aba-esquerda-atual.png") no-repeat top left;/*FUNDO*/
 }

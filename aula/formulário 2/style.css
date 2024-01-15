@@ -1,50 +1,78 @@
+/*GERAL*/
 body {
-    font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
-    width: auto;
-    background: #472664 url("../img/fundo.jpg") no-repeat top center;
+    width: auto;                                                        /*LARGURA*/
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;                 /*FONTES*/
+    background: #472664 url(img/fundo.jpg) no-repeat top center;      /*FUNDO COM COR E IMAGEM*/
+    background-size: 1480px;                                            /*TAMANHO DA IMAGEM DE FUNDO*/
 }
+
+/*PRINCIPAL*/
 #container {
-    width: 400px;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 120px;
-    text-align: center;
+    width: 400px;                                                       /*LARGURA*/
+    height: 300px;                                                      /*ALTURA*/
+    background: rgba(255, 255, 255, 0.3);                             /*FUNDO COM OPACIDADE*/
+    border-radius: 10px;                                                /*BORDA ARREDONDADA*/
+    margin: 0 auto;                                                     /*ESPAÇAMENTO EXTERNO*/
+    margin-top: 120px;                                                  /*ESPAÇAMENTO EXTERNO SUPERIOR*/
+    text-align: center;                                                 /*CENTRALIZA O TEXTO*/
 }
+
+/*IMAGEM DE PERFIL QUE ESTÁ DENTRO DO CONTAINER*/
 #container img {
-    width: 120px;
-    height: 120px;
-    margin-top: -60px;
-    margin-bottom: 30px;
+    width: 120px;                                                       /*LARGURA*/
+    height: 120px;                                                      /*ALTURA*/
+    margin-top: -60px;                                                  /*ESPAÇAMENTO EXTERNO SUPERIOR*/
+    margin-bottom: 30px;                                                /*ESPAÇAMENTO EXTERNO INFERIOR*/
 }
+
+/*INPUT*/
 input {
-    width: 80%;
-    height: 40px;
-    font-size: 18px;
-    margin-bottom: 10px;
-    background: #fff;
-    padding-left: 40px;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: 10px;
+    width: 80%;                                                         /*LARGURA*/
+    height: 40px;                                                       /*ALTURA*/
+    font-size: 18px;                                                    /*TAMANHO DA FONTE(LETRA)*/
+    margin-bottom: 10px;                                                /*ESPAÇAMENTO EXTERNO INFERIOR*/
+    background: #fff;                                                 /*COR DE FUNDO*/
+    padding-left: 40px;                                                 /*ESPAÇAMENTO INTERNO ESQUERDO*/
+    border: none;                                                       /*BORDA*/
+    background-repeat: no-repeat;                                       /*REPETIÇÃO DO FUNDO*/
+    background-position: 10px;                                          /*POSIÇÃO DO FUNDO*/
 }
+
+/*CAMPO DO EMAIL*/
 input.email {
-    background-image: url("../img/icone-usuario.png");
+    background-image: url(img/icone-usuario.png);                       /*IMAGEM DE FUNDO(ICONE DE USUARIO)*/
 }
+
+/*CAMPO DA SENHA*/
 input.senha {
-    background-image: url("../img/icone-cadeado.png");
+    background-image: url(img/icone-cadeado.png);                       /*IMAGEM DE FUNDO(ICONE DE CADEADO)*/
 }
+
+/*BOTÃO DE ENVIAR*/
 input.submit {
-    color: #fff;
-    background-color: #f79300;
-    border: 2px solid #db7d00;
-    padding: 5px 20px;
-    height: 45%;
-    width: 90%;
-    cursor: pointer;
-    /*background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
-    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
-    background: -o-linear-gradient(to bottom, #faa600, #f68a00);*/
-    background: linear-gradient(to bottom, #faa600, #f68a00);   
+    width: 90%;                                                         /*LARGURA*/
+    height: 45%;                                                        /*ALTURA*/
+    color: #fff;                                                      /*COR DO TEXTO*/
+    background: #f79300;                                              /*COR DE FUNDO*/
+    border: 2px solid #db7d00;                                        /*BORDA*/
+    padding: 5px 20px;                                                  /*ESPAÇAMENTO INTERNO*/
+    text-transform: uppercase;                                          /*DEIXA TODAS AS LETRAS MAIÚSCULAS*/
+    cursor: pointer;                                                    /*EFEITO DA MÃOZINHA NO CURSOR(MOUSE)*/
+    background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);/*Torna o fundo compatível(chrome)*/
+    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);  /*Versão do navegador(mozila)*/
+    background: -o-linear-gradient(to bottom, #faa600, #f68a00);    /*Versão do navegador(opera)*/
+    background: linear-gradient(to bottom, #faa600, #f68a00);       /*FUNDO DEGRADÊ*/
+}
+
+/*ESQUECI MINHA SENHA*/
+ul {
+    list-style-type: none;                                              /*MARCADOR DE LISTA*/
+    padding: 0 20px;                                                    /*ESPAÇAMENTO INTERNO*/
+}
+li a {
+    margin-top: -5px;                                                   /*ESPAÇAMENTO EXTERNO SUPERIOR*/
+    color: #c27006;                                                   /*COR DO TEXTO*/
+    text-align: center;                                                 /*CENTRALIZA O TEXTO*/
+    display: block;                                                     /*TORNA EM TIPO BLOCK*/
+    text-transform: uppercase;                                          /*DEIXA TODAS AS LETRAS MAIÚSCULAS*/
 }

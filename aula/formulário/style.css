@@ -1,27 +1,40 @@
+/*GERAL*/
 body {
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;     /*FONTES*/
 }
+
+/*AGRUPAMENTO DAS CAIXAS DE TEXTO*/
 fieldset {
-    padding: 1em;
-    border: 1px solid #ccc;
-    background: #f8f8f8;
-    margin: 1em 0;
+    padding: 1em;                                           /*ESPAÇAMENTO INTERNO*/
+    border: 1px solid #ccc;                               /*BORDA*/
+    background: #f8f8f8;                                  /*FUNDO*/
+    margin: 1em 0;                                          /*ESPAÇAMENTO EXTERNO*/
 }
+
+/*LEGENDA*/
 legend {
-    font-weight: bold;
+    font-weight: bold;                                      /*NEGRITO*/
 }
+
+/*IDENTIFICADOR DOS ELEMENTOS DO FORMULÁRIO*/
 label {
-    display: block;
-    cursor: pointer;
+    display: block;                                         /*TRANSFORMA O LABEL(INLINE) EM UM BLOCK*/ 
+    cursor: pointer;                                        /*EFEITO DA MÃOZINHA NO CURSOR(MOUSE)*/
 }
-input[type="text"] {    /*Aplica apenas para o atributo text*/
-    width: 300px;
+
+/*INPUT*/
+input[type="text"] {                                        /*Aplica apenas para o atributo text*/
+    width: 300px;                                           /*LARGURA*/     
 }
+
+/*CAMPO MENSAGEM*/
 textarea {
-    width: 300px;
-    height: 10em;
+    width: 300px;                                           /*LARGURA*/
+    height: 10em;                                           /*ALTURA*/
 
 }
+
+/*CAMPO LEMBRAR DE MIM*/
 .radio {
-    margin-right: 0.5em;
+    margin-right: 0.5em;                                    /*ESPAÇAMENTO EXTERNO DIREITO*/
 }
