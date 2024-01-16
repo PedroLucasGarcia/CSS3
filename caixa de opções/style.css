@@ -7,67 +7,71 @@ body {
     background: #1f1f2b;                              /*FUNDO*/
     font-family: 'Source Sans Pro', sans-serif;         /*FONTE*/
 }
-button {
-    padding: 10px 25px;                                 /*ESPAÇAMENTO INTERNO*/
-    background: #1f1f2b;                              /*FUNDO*/
-    border-radius: 20px;                                /*BORDA ARREDONDADA*/
-}
-button a {
-    display: block;
-    color: #fff;                                     /*COR DO TEXTO*/
-    text-decoration: none;                             /*DECORAÇÃO DO TEXTO*/
-    font-weight: bold;                                 /*NEGRITO*/
-    font-size: 15px;                                   /*TAMANHO DA FONTE*/
-}
-button a:hover {
-    display: block;
-    background: #000;                                 /*FUNDO*/
+h1 {
+    padding-bottom: ;
 }
 
 /*HTML*/
 .caixa-html {
-    width: 550px;                                        /*LARGURA*/
+    width: 555px;                                       /*LARGURA*/
     background: #e2fff3;                              /*FUNDO*/
     border-radius: 10px;                                /*BORDA ARREDONDADA*/
     text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
     margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
     padding: 40px 10px;                                 /*ESPAÇAMENTO INTERNO*/
-    line-height: 50px;                                  /*ALTURA DA LINHA DO TEXTO*/
+    line-height: 60px;                                  /*ALTURA DA LINHA DO TEXTO*/
     float: left;                                        /*FLUTUANTE*/
 }
 
 /*CSS*/
 .caixa-css {
-    width: 550px;                                        /*LARGURA*/
+    width: 555px;                                       /*LARGURA*/
     background: #f8f7c1;                              /*FUNDO*/
     border-radius: 10px;                                /*BORDA ARREDONDADA*/
     text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
     margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
     padding: 40px 10px;                                 /*ESPAÇAMENTO INTERNO*/
-    line-height: 50px;                                  /*ALTURA DA LINHA DO TEXTO*/
+    line-height: 60px;                                  /*ALTURA DA LINHA DO TEXTO*/
     float: left;                                        /*FLUTUANTE*/
 }
 
 /*JAVASCRIPT*/
 .caixa-javascript {
-    width: 550px;                                        /*LARGURA*/
+    width: 555px;                                       /*LARGURA*/
     background: #f8f4f3;                              /*FUNDO*/
     border-radius: 10px;                                /*BORDA ARREDONDADA*/
     text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
     margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
     padding: 40px 10px;                                 /*ESPAÇAMENTO INTERNO*/
-    line-height: 50px;                                  /*ALTURA DA LINHA DO TEXTO*/
+    line-height: 60px;                                  /*ALTURA DA LINHA DO TEXTO*/
     float: left;                                        /*FLUTUANTE*/
 }
 
 /*PHP*/
 .caixa-php {
-    width: 550px;                                        /*LARGURA*/
+    width: 555px;                                       /*LARGURA*/
     background: #f5b5c3;                              /*FUNDO*/
     border-radius: 10px;                                /*BORDA ARREDONDADA*/
     text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
     margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
     padding: 40px 10px;                                 /*ESPAÇAMENTO INTERNO*/
-    line-height: 50px;                                  /*ALTURA DA LINHA DO TEXTO*/
+    line-height: 60px;                                  /*ALTURA DA LINHA DO TEXTO*/
     float: left;                                        /*FLUTUANTE*/
+}
+
+/*BOTÃO*/
+.botao {                         
+    width: 200px;                                       /*LARGURA*/
+    font-size: 15px;                                    /*TAMANHO DA FONTE*/
+    display: inline-block;                              /*TRANSFORMA EM UM ELEMENTO INLINE-BLOCK*/
+    background: #1f1f2b;                              /*FUNDO*/
+    font-weight: bold;                                  /*NEGRITO*/
+    text-decoration: none;                              /*DECORAÇÃO DO TEXTO*/
+    color: #fff;                                      /*COR*/
+    line-height: 40px;                                  /*ALTURA DA LINHA DE TEXTO*/
+    border-radius: 25px;                                /*BORDA ARREDONDADA*/
+    text-align: center;                                 /*ALINHAMENTO DO TEXTO*/
+}
+a:hover {
+    background: #000;                                 /*FUNDO*/
 }
