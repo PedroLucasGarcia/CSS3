@@ -1,0 +1,224 @@
+/*GERAL*/
+* {
+    margin: 0;                                                  /*ESPAÇAMENTO EXTERNO*/
+    padding: 0;                                                 /*ESPAÇAMENTO INTERNO*/
+}
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;         /*FONTE*/
+    background: #fff url(img/fundo.png) repeat-x top left;    /*FUNDO*/
+}
+
+/*PRINCIPAL*/
+#container {
+    width: 750px;                                               /*LARGURA*/
+    margin: 0 auto;                                             /*ESPAÇAMENTO EXTERNO*/
+}
+
+/*TOPO*/
+#topo {
+    height: 150px;                                              /*LARGURA*/
+    background: url(img/detalhe-topo.png) no-repeat right top ; /*FUNDO - DETALHE DO TOPO*/ 
+    padding-top: 25px;                                          /*ESPAÇAMENTO INTERNO SUPERIOR*/
+}
+
+/*LOGO*/
+.logo {
+   width: 152px;                                                /*LARGURA*/
+   height: 66px;                                                /*ALTURA*/
+   background: url(img/logo.png) no-repeat center;              /*FUNDO - LOGO*/
+}
+
+/*FORMATANDO LINKS*/
+a:link, a:visited {
+    color: #b10333;                                           /*COR*/
+    padding: 2px;                                               /*ESPAÇAMENTO INTERNO*/
+}
+a:hover {
+    color: #e50040;                                           /*COR*/
+}
+
+/*MENUS*/
+ul  {
+    margin: 0;                                                  /*ESPAÇAMENTO EXTERNO*/
+    padding: 0;                                                 /*ESPAÇAMENTO INTERNO*/
+    list-style: none;                                           /*ESTILO DE LISTA*/
+}
+
+/*MENU DO TOPO*/
+#topo ul {
+    background: #b10333;                                      /*FUNDO*/
+    margin-top: 30px;                                           /*ESPAÇAMENTO EXTERNO SUPERIOR*/
+    float: left;                                                /*FLUTUANTE*/
+}
+#topo ul li {
+    float: left;                                                /*FLUTUANTE*/
+}
+#topo ul a {
+    font-size: 0.9em;
+    display: block;                                             /*TRANSFORMA O ELEMENTO EM BOLCK*/
+    padding: 0.5em 1.3em;                                       /*ESPAÇAMENTO INTERNO*/
+    line-height: 2.1em;                                         /*ALTURA DA LINHA DO TEXTO*/
+    text-decoration: none;                                      /*DECORAÇÃO DO TEXTO*/
+    color: #fff;                                              /*COR*/
+    background: url(img/divisor.png) no-repeat left center;     /*FUNDO - DIVIDOR*/
+}
+#topo a:hover {
+    color: #69001d;                                           /*COR*/
+}
+
+/*TIRANDO O DIVISOR DO HOME*/
+#topo ul .primeiro a {
+    background: none;                                           /*FUNDO*/
+}
+
+/*MARCANDO PÁGINA*/
+body.home #navegacao a#home, body.brasil #navegacao a#brasil, 
+body.internacional #navegacao a#internacional, body.economia #navegacao a#economia, 
+body.saude #navegacao a#saude, body.ciencia #navegacao a#ciencia, body.fotos #navegacao a#fotos
+{
+    color: #fff;                                              /*COR*/
+    background: #de003e;                                      /*FUNDO*/
+}
+
+/*CONTEÚDOS*/
+#conteudo {
+    margin-top: 60px;                                           /*ESPAÇAMENTO EXTERNO SUPERIOR*/
+   background: #f5f5f5;                                       /*FUNDO*/
+}
+
+#primario {
+    width: 270px;                                               /*LARGURA*/
+    float: left;                                                /*FLUTUANTE*/
+    margin: 0 0 20px 195px;                                     /*EXPAÇAMENTO EXTERNO*/
+}
+#duas-colunas #primario {
+    width: 555px;                                               /*LARGURA*/
+}
+#uma-coluna #primario {
+    width: 750px;                                               /*LARGURA*/
+    margin: 0 0 20px 0;                                         /*EXPAÇAMENTO EXTERNO*/
+}
+
+#secundario {
+    width: 270px;                                               /*LARGURA*/
+    float: left;                                                /*FLUTUANTE*/
+    margin: 0 0 20px 15px;                                      /*EXPAÇAMENTO EXTERNO*/
+}
+
+#lateral {
+    width: 180px;                                               /*LARGURA*/
+    float: left;                                                /*FLUTUANTE*/
+    margin: 0 0 20px -750px;                                    /*EXPAÇAMENTO EXTERNO*/
+}
+
+/*CAIXAS*/
+.caixa {
+    background: #f3f3f3 url(img/fundo-caixa.png);             /*FUNDO*/
+    margin: 10px 0;                                             /*ESPAÇAMENTO EXTERNO*/
+    padding: 5px;                                               /*ESPAÇAMENTO INTERNO*/
+}
+.caixa-conteudo {
+    background: #fff;                                         /*FUNDO*/
+    padding: 5px;                                               /*ESPAÇAMENTO INTERNO*/
+    margin-top: 5px;                                            /*ESPAÇAMENTO EXTERNO*/
+}
+h2 {
+    font-size: 1.1em;                                           /*TAMANHO DA FONTE*/
+    background: #294c71;                                      /*FUNDO*/
+    color: #fff;                                              /*COR*/
+    padding: 5px;                                               /*ESPAÇAMENTO INTERNO*/
+}
+
+/*MENU LATERAL*/
+#lateral ul a {
+    font-size: 0.9em;                                           /*TAMANHO DA FONTE*/
+    padding: 3px;                                               /*ESPAÇAMENTO INTERNO*/
+    display: block;                                             /*TRANSFORMA O ELEMENTO EM BLOCK*/
+    line-height: 30px;                                          /*ALTURA DA LINHA DE TEXTO*/
+    color: #000;                                              /*COR*/
+    text-decoration: none;                                      /*DECORAÇÃO DO TEXTO*/
+    border-bottom: 1px solid #f3f3f3;                         /*BORDA INFERIOR*/
+}
+#lateral ul a:hover {
+    background: #f9f9f9 url(img/marcador.png) no-repeat left center;      /*FUNDO - MARCADOR*/
+    color: #a1a1a1;                                                       /*COR*/
+    padding-left: 20px;                                                     /*ESPAÇAMENTO INTERNO ESQUERDO*/
+}
+
+/*FORMULÁRIO LATERAL*/
+label {
+    display: block;                                             /*TRANSFORMA O ELEMENTO EM BLOCK*/
+    cursor: pointer;                                            /*CURSOR MÃOZINHA*/
+}
+input {
+    width: 125px;                                               /*LARGURA*/
+    padding: 5px;                                               /*ESPAÇAMENTO INTERNO*/
+    font-size: 0.9em;                                           /*TAMANHO DA FONTE*/
+    background-color: #fff;                                   /*FUNDO*/
+}
+input.submit {
+    width: 80px;                                                /*LARGURA*/
+    color: #fff;                                              /*COR*/
+    background-color: #b10333;                                /*FUNDO*/
+    border: 2px solid #870529;                                /*BORDA*/
+}
+
+/*FORMATANDO IMAGEM*/
+img.imagem-principal {
+    border: 2px solid #dfdfdf;                                /*BORDA*/
+}
+
+/*FORMATANDO CABEÇALHOS*/
+h3 {
+    text-transform: uppercase;                                  /*TRANSFORMA O TEXTO*/
+    display: inline;                                            /*TRANSFORMA DE BLOCK PARA INLINE*/
+    font-size: 0.8em;                                           /*TAMANHO DA FONTE*/
+    padding: 3px;                                               /*ESPAÇAMENTO INTERNO*/
+}
+.destaque h3 {
+    background: #b10333;                                      /*FUNDO*/
+    color: #fff;                                              /*COR*/
+}
+.entrevista h3 {
+    background: #de003e;                                      /*FUNDO*/
+}
+
+/*LISTA DE NOTÍCIAS*/   
+.lista-noticias li {
+    padding: 2px;                                               /*ESPAÇAMENTO INTERNO*/
+    border-bottom: 1px solid #ccc;                            /*BORDA INFERIOR*/
+    height: 62px;                                               /*ALTURA*/
+}
+.lista-noticias li a img {
+    float: left;                                                /*FLUTUANTE*/
+    margin: 5px;                                                /*ESPAÇAMENTO EXTERNO*/
+}
+.lista-noticias li a {
+    text-decoration: none;                                      /*DECORAÇÃO DO TEXTO*/
+}
+.lista-noticias li a h3 {
+    color: #3e7ab9;                                           /*COR*/
+    font-size: 0.8em;                                           /*TAMANHO DA FONTE*/
+    padding: 0;                                                 /*ESPAÇAMENTO INTERNO*/
+}
+.lista-noticias li a p {
+    color: #000;                                              /*COR*/
+    font-size: 0.7em;                                           /*TAMANHO DA FONTE*/
+}
+.lista-noticias li:hover {
+    background: #eee;                                         /*FUNDO*/
+    cursor: pointer;                                            /*CURSOR MÃOZINHA*/
+}
+
+/*RODAPÉ*/
+#container-rodape {
+    clear: both;                                                /*LIMPA O FLUXO*/
+    background: #294c71;                                      /*FUNDO*/
+    padding: 20px;                                              /*ESPAÇAMENTO INTERNO*/
+}
+#rodape {
+    width: 750px;                                               /*LARGURA*/
+    margin: 0 auto;                                             /*ESPAÇAMENTO EXTERNO*/
+    color: #fff;                                              /*COR*/
+    text-align: center;                                         /*ALINHAMENTO DO TEXTO*/
+}
