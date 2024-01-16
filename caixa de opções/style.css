@@ -7,9 +7,6 @@ body {
     background: #1f1f2b;                              /*FUNDO*/
     font-family: 'Source Sans Pro', sans-serif;         /*FONTE*/
 }
-h1 {
-    padding-bottom: ;
-}
 
 /*HTML*/
 .caixa-html {
@@ -19,7 +16,7 @@ h1 {
     text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
     margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
     padding: 40px 10px;                                 /*ESPAÇAMENTO INTERNO*/
-    line-height: 60px;                                  /*ALTURA DA LINHA DO TEXTO*/
+    line-height: 40px;                                  /*ALTURA DA LINHA DO TEXTO*/
     float: left;                                        /*FLUTUANTE*/
 }
 
@@ -31,7 +28,7 @@ h1 {
     text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
     margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
     padding: 40px 10px;                                 /*ESPAÇAMENTO INTERNO*/
-    line-height: 60px;                                  /*ALTURA DA LINHA DO TEXTO*/
+    line-height: 40px;                                  /*ALTURA DA LINHA DO TEXTO*/
     float: left;                                        /*FLUTUANTE*/
 }
 
@@ -43,7 +40,7 @@ h1 {
     text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
     margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
     padding: 40px 10px;                                 /*ESPAÇAMENTO INTERNO*/
-    line-height: 60px;                                  /*ALTURA DA LINHA DO TEXTO*/
+    line-height: 40px;                                  /*ALTURA DA LINHA DO TEXTO*/
     float: left;                                        /*FLUTUANTE*/
 }
 
@@ -55,8 +52,14 @@ h1 {
     text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
     margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
     padding: 40px 10px;                                 /*ESPAÇAMENTO INTERNO*/
-    line-height: 60px;                                  /*ALTURA DA LINHA DO TEXTO*/
+    line-height: 40px;                                  /*ALTURA DA LINHA DO TEXTO*/
     float: left;                                        /*FLUTUANTE*/
+}
+
+/*FORMATANDO O TÍTULO DAS CAIXAS*/
+#caixa h1 {
+    line-height: 1.5em;                                 /*ALTURA DA LINHA DE TEXTO*/
+    font-size: 2.5em;                                   /*TAMANHO DA FONTE*/
 }
 
 /*BOTÃO*/
@@ -71,6 +74,7 @@ h1 {
     line-height: 40px;                                  /*ALTURA DA LINHA DE TEXTO*/
     border-radius: 25px;                                /*BORDA ARREDONDADA*/
     text-align: center;                                 /*ALINHAMENTO DO TEXTO*/
+    margin-top: 30px;                                   /*ESPAÇAMENTO EXTERNO SUPERIOR*/
 }
 a:hover {
     background: #000;                                 /*FUNDO*/
