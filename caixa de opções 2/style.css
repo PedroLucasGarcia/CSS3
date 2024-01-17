@@ -1,0 +1,151 @@
+/*GERAL*/
+* {
+    margin: 0;                                          /*ESPAÇAMENTO EXTERNO*/
+    padding: 0;                                         /*ESPAÇAMENTO INTERNO*/
+    /*border: 1px solid red;*/
+}
+body {
+    font-family: sans-serif;                            /*FONTE*/
+    background: #1f1f2b;                              /*FUNDO*/
+}
+
+/*FORMATAÇÃO DOS MENUS*/
+ul {
+    list-style: none;                                   /*ESTILO DE LISTA*/
+}
+a {
+    text-decoration: none;                              /*DECORAÇÃO DO TEXTO*/
+}
+
+/*HEADER*/
+#header {
+    box-sizing: border-box;                             /*HEIGHT E PADDING FICAM COM UM VALOR FIXO*/
+    height: 70px;                                       /*ALTURA*/
+    display: flex;                                      /*OS ITENS FICAM UM DO LADO DO OUTRO*/
+    align-items: center;                                /*ALINHAMENTO DOS ITENS*/
+    justify-content:space-between;                      /**/
+    background: #f8f4f3;                              /*FUNDO*/
+    border-bottom: 1px solid #1f1f2b;                 /*BORDA*/
+    width: 100%;                                        /*LARGURA*/
+    position: fixed;                                    /*POSICIONAMENTO*/
+}
+#header img {
+    padding-top: 3px;
+    padding-left: 2px;
+    /*padding: 5px;                                       /*ESPAÇAMENTO INTERNO*/
+}
+
+/*MENU DO HEADER*/
+#menu {
+    display: flex;                                      /*OS ITENS FICAM UM DO LADO DO OUTRO*/
+    gap: 1rem;                                          /*DÁ UM ESPAÇAMENTO NOS ITENS DO MENU*/
+
+}
+#menu a {
+    display: block;                                     /*TRANSFORMA OS ELEMENTOS A EM BLOCK*/
+    padding: .5rem;                                     /*ESPAÇAMENTO INTERNO*/
+    color: #1f1f2b;                                   /*COR*/
+}
+#menu a:hover {
+    color: #f87171;                                      /*COR*/
+}
+
+/*APRESENTAÇÃO*/
+#caixa-apresentacao {
+    clear: both;
+    width: 100%;                                        /*LARGURA*/
+    background: #f8f4f3;                              /*FUNDO*/
+    text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
+    padding: 150px 0;                                   /*ESPAÇAMENTO INTERNO*/
+}
+#caixa-apresentacao h1 {
+    width: 50%;                                         /*LARGURA*/
+    margin: auto;                                       /*ESPAÇAMENTO EXTERNO*/
+    margin-bottom: 20px;                                /*ESPAÇAMENTO EXTERNO INFERIOR*/
+    font-size: 1.8em;
+}
+#caixa-apresentacao p {
+    width: 60%;                                         /*LARGURA*/
+    margin: auto;                                       /*ESPAÇAMENTO EXTERNO*/
+    font-size: 1.2em;                                   /*TAMANHO DA FONTE*/
+    font-family: 'Segoe UI';
+}
+
+/*HTML*/
+#caixa-html {
+    width: 555px;                                       /*LARGURA*/
+    background: #e2fff3;                              /*FUNDO*/
+    border-radius: 10px;                                /*BORDA ARREDONDADA*/
+    text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
+    margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
+    padding: 50px 10px;                                 /*ESPAÇAMENTO INTERNO*/
+    float: left;                                        /*FLUTUANTE*/ 
+}
+
+/*CSS*/
+#caixa-css {
+    width: 555px;                                       /*LARGURA*/
+    background: #f8f7c1;                              /*FUNDO*/
+    border-radius: 10px;                                /*BORDA ARREDONDADA*/
+    text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
+    margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
+    padding: 50px 10px;                                 /*ESPAÇAMENTO INTERNO*/
+    float: left;                                        /*FLUTUANTE*/
+}
+
+/*JAVASCRIPT*/
+#caixa-javascript {
+    width: 555px;                                       /*LARGURA*/
+    background: #b3cbfd;                              /*FUNDO*/
+    border-radius: 10px;                                /*BORDA ARREDONDADA*/
+    text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
+    margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
+    padding: 50px 10px;                                 /*ESPAÇAMENTO INTERNO*/
+    float: left;                                        /*FLUTUANTE*/
+}
+
+/*PHP*/
+#caixa-php {
+    width: 555px;                                       /*LARGURA*/
+    background: #f5b5c3;                              /*FUNDO*/
+    border-radius: 10px;                                /*BORDA ARREDONDADA*/
+    text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
+    margin: 40px;                                       /*ESPAÇAMENTO EXTERNO*/
+    padding: 50px 10px;                                 /*ESPAÇAMENTO INTERNO*/
+    float: left;                                        /*FLUTUANTE*/
+}
+
+/*FORMATANDO O TÍTULO DAS CAIXAS*/
+#caixas h1 {
+    line-height: 1.3em;                                 /*ALTURA DA LINHA DE TEXTO*/
+    font-size: 2.5em;                                   /*TAMANHO DA FONTE*/
+    margin-bottom: 15px;                                /*ESPAÇAMENTO EXTERNO INFERIOR*/
+    text-align: center;                                 /*ALINHAMENTO DO TEXTO*/
+}
+
+/*FORMATANDO O PARÁGRAFO DAS CAIXAS*/
+#caixas p {
+    width: 80%;                                         /*LARGURA*/
+    display: inline-block;                              /*TRANSFORMA EM UM ELEMENTO INLINE-BLOCK*/
+    line-height: 1.5em;                                 /*ALTURA DA LINHA DE TEXTO*/
+}
+
+/*BOTÃO*/
+.botao {                         
+    width: 200px;                                       /*LARGURA*/
+    font-size: 15px;                                    /*TAMANHO DA FONTE*/
+    display: inline-block;                              /*TRANSFORMA EM UM ELEMENTO INLINE-BLOCK*/
+    background: #1f1f2b;                              /*FUNDO*/
+    font-weight: bold;                                  /*NEGRITO*/
+    text-decoration: none;                              /*DECORAÇÃO DO TEXTO*/
+    color: #fff;                                      /*COR*/
+    line-height: 40px;                                  /*ALTURA DA LINHA DE TEXTO*/
+    border-radius: 25px;                                /*BORDA ARREDONDADA*/
+    text-align: center;                                 /*ALINHAMENTO DO TEXTO*/
+    margin-top: 30px;                                   /*ESPAÇAMENTO EXTERNO SUPERIOR*/
+}
+#caixas a:hover {
+    background: #000;                                 /*FUNDO*/
+}
+
+/*RODAPÉ*/
