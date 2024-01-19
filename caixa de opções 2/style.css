@@ -168,9 +168,10 @@ a {
     clear: both;                                        /*LIMPA O FLUXO*/
     width: 100%;                                        /*LARGURA*/
     padding: 10px 0;                                    /*ESPAÇAMENTO INTERNO*/
-    background: #f8f4f3;                              /*FUNDO*/
+    background: #e6e3e3;                              /*FUNDO*/
     color: #1f1f2b;                                   /*COR*/
 }
 #rodape .copy {
     padding-left: 5px;                                  /*ESPAÇAMENTO INTERNO ESQUERDO*/
+    /*background: #dfdcdc;*/
 }
