@@ -3,7 +3,7 @@
 /*CAIXA 1*/
 .caixa {
     width: 400px;                                                       /*LARGURA*/
-    background: #dedede url(../img/topo.png) no-repeat left top;      /*FUNDO*/
+    background: #dedede url(img/topo.png) no-repeat left top;      /*FUNDO*/
 }
 
 /*TÍTULO DA CAIXA*/
@@ -14,7 +14,7 @@
 /*PARAGRAFO DA CAIXA*/
 .caixa p {
     padding: 10px 20px 20px 20px;                                       /*ESPAÇAMENTO INTERNO*/
-    background: url(../img/baixo.png) no-repeat left bottom;            /*FUNDO*/
+    background: url(img/baixo.png) no-repeat left bottom;            /*FUNDO*/
 }
 
 /*----------------------------------------------------------*/
@@ -23,13 +23,13 @@
 /*CAIXA 2*/
 .caixa2 {
     width: 400px;                                                       /*LARGURA*/
-    background: url(../img/fundo-arredondamento.png) repeat-y;          /*FUNDO*/
+    background: url(img/fundo-arredondamento.png) repeat-y;          /*FUNDO*/
 }
 
 /*TÍTULO DA CAIXA 2*/
 .caixa2 h2 {
     padding: 10px 20px 0 20px;                                          /*ESPAÇAMENTO INTERNO*/
-    background: url(../img/topo2.png) no-repeat left top;               /*FUNDO*/
+    background: url(img/topo2.png) no-repeat left top;               /*FUNDO*/
 }
 
 /*PARAGRAFO DA CAIXA 2*/
@@ -40,5 +40,5 @@
 /*CLASSE DA DIV DA CAIXA 2*/
 .caixa2 .ultimo {
     padding-bottom: 20px;                                               /*ESPAÇAMENTO INTERNO*/
-    background: url(../img/baixo2.png) no-repeat left bottom;           /*FUNDO*/
+    background: url(img/baixo2.png) no-repeat left bottom;           /*FUNDO*/
 }

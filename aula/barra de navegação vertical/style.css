@@ -15,7 +15,7 @@ ul a {
     text-decoration: none;			
     text-indent: 40px;				        /*Indenta o texto*/
     line-height: 40px;          	        /*Define a altura de uma caixa de linha, soma caso já tenha um height*/
-    background: #f7b600 url("../img/menu.png");
+    background: #f7b600 url("img/menu.png");
 }
 
 a:hover {

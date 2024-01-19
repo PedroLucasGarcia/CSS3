@@ -10,7 +10,7 @@ body {
 }
 #marca {
     height: 200px;
-    background: #225992 url("../img/cabecalho2.jpg") no-repeat center;
+    background: #225992 url("img/cabecalho2.jpg") no-repeat center;
     text-align: center;
     line-height: 200px;
 }

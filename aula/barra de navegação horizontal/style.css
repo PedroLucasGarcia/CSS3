@@ -6,7 +6,7 @@ ul {
     padding: 0;                                                 /*ESPAÇAMENTO INTERNO*/
     list-style: none;                                           /*MARCADOR DE LISTA*/
     width: auto;                                                /*LARGURA*/
-    background: #159cb0 url("../img/fundo-horizontal.png");   /*FUNDO*/
+    background: #159cb0 url("img/fundo-horizontal.png");   /*FUNDO*/
     float: left;                                                /*FLUTUANTE*/
 }
 
@@ -22,7 +22,7 @@ ul a {
     line-height: 2em;                                           /*ALTURA DA LINHA DA LETRA*/
     text-decoration: none;                                      /*DECORAÇÃO DO TEXTO*/
     color: #FFF;                                              /*COR*/
-    background: url("../img/divisor.png") repeat-y;             /*FUNDO*/
+    background: url("img/divisor.png") repeat-y;             /*FUNDO*/
 }
 
 /*MARCANDO PÁGINA:*/
