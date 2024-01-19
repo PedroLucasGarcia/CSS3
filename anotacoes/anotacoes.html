@@ -94,20 +94,30 @@ Forma de aplicar imagem:
 background-image: url("caminho da imagem");
 (Se a imagem estiver em uma outra pasta colocar ../)
 
-backgrund-repeat:(no-repeat, repeat, repeat-x e repeat-y); - Define se vai ter repetição e como vai ser essa repetição
+(OBS: Aplicar por exemplo uma cor e uma imagem de fundo, é útil pois caso a imagem não carregue nos certificamos que pelo menos a cor irá aparecer)
+
+background-repeat:(no-repeat, repeat, repeat-x e repeat-y); - Define se vai ter repetição e como vai ser essa repetição
 
 background-attachment:(fixed, scroll); -  Especifica se a imagem de fundo deve rolar ou ser fixa
 
 background-position:(center, left, right); - Define uma posição
 (pode ter 2 valores, o primeiro é na horizontal e o segundo é na vestical)
 
+background-size: auto; - Valor padrão. A imagem de fundo é exibida em seu tamanho original.
+
+background-size: 120px 80px; - Define a largura e a altura da imagem de fundo. O primeiro valor define a largura, o segundo valor define a altura. Se apenas um valor for fornecido, o segundo será definido como “auto”.
+
+background-size: 100% 75%; - Define a largura e a altura da imagem de fundo em porcentagem do elemento pai. O primeiro valor define a largura, o segundo valor define a altura. Se apenas um valor for fornecido, o segundo será definido como 'auto'.
+
+background-size: cover; - Redimensiona a imagem de fundo para cobrir todo o container, mesmo que seja necessário esticar a imagem ou cortar um pouco uma das bordas.
+
+background-size: contain; - Redimensiona a imagem de fundo para garantir que a imagem esteja totalmente visível.
+
 Abreviação do background - Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
 background-color, background-image, background-repeat, background-attachment, background-position
 EX: background: blue url("caminho-da-imagem") no-repeat fixed center center;
 
-background: linear-gradient(to bottom, #cor, #cor); - Aplica um gradiente(degradê)
-
-(OBS: Aplicar por exemplo uma cor e uma imagem de fundo, é útil pois caso a imagem não carregue nos certificamos que pelo menos a cor irá aparecer)
+background: linear-gradient(to 'direção', #cor, #cor); - Aplica um gradiente(degradê)
 
 ----------------------------------------------------------------------------------------------------
 
@@ -623,4 +633,89 @@ CLASSE DA DIV DA CAIXA 2
     padding-bottom: 20px;                                               ESPAÇAMENTO INTERNO
     background: url(../img/baixo2.png) no-repeat left bottom;           FUNDO
 }
+
+----------------------------------------------------------------------------------------------------
+
+PARALLAX
+
+O efeito parallax é uma técnica utilizada para criar uma sensação de profundidade ao rolar uma página web. Ele envolve mover diferentes camadas de conteúdo em velocidades diferentes enquanto o usuário rola a página, criando assim uma ilusão tridimensional. O resultado final é um efeito visualmente atraente que dá a impressão de que elementos na frente se movem mais rápido do que os elementos no fundo, como se estivessem em camadas separadas.
+
+Como criar um efeito de rolagem paralaxe
+
+Use um elemento contêiner e adicione uma imagem de fundo ao contêiner com uma altura específica. Em seguida, use 'background-attachment: fixed' para criar o efeito de paralaxe real. Além disso, você deve adicionar uma 'height'(altura) para sua imagem. Você pode aplicar um valor para o height em px ou %. Se você quiser usar porcentagem, por exemplo 100%, para fazer com que a imagem caiba em toda a tela, defina a altura do contêiner de paralaxe para 100%. 
+(OBS: Você também deve aplicar 'height: 100%;' tanto para <html> quanto para <body>)
+
+----------------------------------------------------------------------------------------------------
+*****
+COMO UTILIZAR AS FONTES DO GOOGLE?
+
+Basta adicionar um link especial para a folha de estilo na seção <head> e depois consultar a fonte no CSS.
+
+----------------------------------------------------------------------------------------------------
+
+NORMALIZE CSS
+
+Normalize CSS corrige alguns bugs que existem nas estilizações padrões dos navegadores.*/
+
+
+LINK: https://necolas.github.io/normalize.css/8.0.1/normalize.css 
+
+----------------------------------------------------------------------------------------------------
+
+CANTOS ARRENDONDADOS
+
+border-radius: ; - Aplica um arrendonamento nas bordas
+
+OBS: Pode ter: 1 valor(para todos os lados), 2 valores(para 'esquerda e direita' e 'topo e inferior') ou 4 valores(1 para cada lado)
+
+----------------------------------------------------------------------------------------------------
+
+BOX-SIZING 
+
+box-sizing: border-box; - Nos permite incluir o preenchimento e a borda na largura e altura total de um elemento.
+
+Por padrão, a largura e a altura de um elemento são calculadas, por isso, se vc aplica um padding por exemplo ele irá somar a altura + largura + o padding.
+
+A propriedade box-sizing nos permite incluir o preenchimento e a borda na largura e altura total de um elemento, ou seja, se aplicarmos um padding ele não modificará o tamanho do elemento.
+
+----------------------------------------------------------------------------------------------------
+
+GRADIENTES
+
+Gradientes CSS permitem exibir transições suaves entre duas ou mais cores especificadas.
+
+CSS define três tipos de gradientes:
+
+Gradientes lineares (desce/cima/esquerda/direita/diagonalmente)
+Gradientes radiais (definidos pelo seu centro)
+Gradientes Cônicos (girados em torno de um ponto central)
+
+linear-gradient(direction, cor1, cor2, ...); - Para criar um gradiente linear você deve definir pelo menos duas paradas de cor. Paradas de cores são as cores entre as quais você deseja renderizar transições suaves. Você também pode definir um ponto inicial e uma direção (ou um ângulo) junto com o efeito de gradiente.
+
+radial-gradient(pode definir uma forma, posição, cor1, cor2 ...,); - Um gradiente radial é definido pelo seu centro. Para criar um gradiente radial você também deve definir pelo menos duas paradas de cor.
+
+conic-gradient([ângulo] [posição,] cor1, cor2, ...); - Um gradiente cônico é um gradiente com transições de cores giradas em torno de um ponto central. Para criar um gradiente cônico você deve definir pelo menos duas cores.
+
+----------------------------------------------------------------------------------------------------
+
+SOMBRAS 
+
+Em textos - A propriedade CSS text-shadow aplica sombra ao texto.
+
+text-shadow: 2px 2px; - especifica a sombra horizontal e a sombra vertical.
+text-shadow: 2px 2px red; - especifica a sombra horizontal, a sombra vertical e uma cor.
+text-shadow: 2px 2px 5px red; - especifica a sombra horizontal, a sombra vertical blur(desfoque) e uma cor.
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; - especifica várias sombras.
+
+Em caixas - A propriedade CSS box-shadow é usada para aplicar uma ou mais sombras a um elemento.
+
+box-shadow: 2px 2px; - especifica a sombra horizontal e a sombra vertical.
+box-shadow: 2px 2px red; - especifica a sombra horizontal, a sombra vertical e uma cor.
+box-shadow: 2px 2px 5px red; - especifica a sombra horizontal, a sombra vertical blur(desfoque) e uma cor.
+box-shadow: 2px 2px 5px 10px red; - especifica a sombra horizontal, a sombra vertical blur(desfoque), uma dispersão e uma cor.
+box-shadow: 2px 2px 5px red inset; - especifica que é uma sobra interna.
+box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; - especifica várias sombras.
+----------------------------------------------------------------------------------------------------
+
+
 -->

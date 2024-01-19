@@ -767,7 +767,6 @@ li a {
 }*/
 
 /*------------------------------------------------------------------------------------------------*/
-
 /* ARREDONDAMENTO COM IMAGEM */
 
 /*ARREDONDAMENTO COM IMAGENS SÓLIDAS*/
@@ -789,7 +788,7 @@ li a {
     background: url(../img/baixo.png) no-repeat left bottom;            /*FUNDO
 }*/
 
-/*----------------------------------------------------------*/
+
 /*ARREDONDAMENTO COM IMAGENS DEGRADÊ*/
 
 /*CAIXA 2
@@ -814,3 +813,310 @@ li a {
     padding-bottom: 20px;                                               /*ESPAÇAMENTO INTERNO
     background: url(../img/baixo2.png) no-repeat left bottom;           /*FUNDO
 }*/
+/*------------------------------------------------------------------------------------------------*/
+/* PARALLAX */
+
+/*GERAL
+* {
+    margin: 0;                                          /*ESPAÇAMENTO EXTERNO
+    padding: 0;                                         /*ESPAÇAMENTO INTERNO
+}
+
+/*PARA APLICAR O EFEITO PARALLAX USANDO % DEVE-SE APLICAR TANTO NO BODY QUANTO NO HTML
+body, html {
+    height: 100%;                                       /*ALTURA
+    font-family: 'Segoe UI', sans-serif;                /*FONTE
+}
+
+/*APLICANDO O EFEITO PARALLAX NAS CLASSES
+.caixa1, .caixa2, .caixa3, .caixa4 {
+    position: relative;                                 /*POSICIONAMENTO
+    height: 100%;                                       /*ALTURA
+    width: 100%;                                        /*LARGURA
+    background-attachment: fixed;                       /*DEIXA O FUNDO FIXO
+    background-repeat: no-repeat;                       /*TIRA A REPETIÇÃO DO FUNDO
+    background-size: cover;                             /*REDIMENCIONA O FUNDO PARA COBRIR TODO O CONTAINER
+    background-position: center;                        /*POSICIONA O FUNDO NO CENTRO
+    opacity: 0.7;                                       /*APLICA OPACIDADE NO FUNDO
+}
+
+/*CLASSES COM AS IMAGENS
+.caixa1 {
+    background-image: url(img/imagem1.jpg);             /*IMAGEM DE FUNDO
+}
+.caixa2 {
+    background-image: url(img/imagem2.jpg);             /*IMAGEM DE FUNDO
+}
+.caixa3 {
+    background-image: url(img/imagem3.jpg);             /*IMAGEM DE FUNDO
+}
+.caixa4 {
+    background-image: url(img/imagem4.jpg);             /*IMAGEM DE FUNDO
+}
+
+/*TÍTULO DAS CAIXAS
+.titulo-caixa {
+    position: absolute;                                 /*POSICIONAMENTO
+    left: 0;                                            /*POSICIONAMENTO
+    top: 48%;                                           /*POSICIONAMENTO
+    width: 100%;                                        /*LARGURA
+    text-align: center;                                 /*ALINAHMENTO DO TEXTO
+}
+.titulo-caixa span.titulo {
+    color: #fff;                                      /*COR
+    background-color: #111;                           /*FUNDO
+    padding: 18px;                                      /*ESPAÇAMENTO INTERNO
+    font-size: 25px;                                    /*TAMANHO DA FONTE
+    letter-spacing: 5px;                                /*ESPAÇAMENTO DAS LETRAS
+    text-transform: uppercase;                          /*TRANSFORMA O TEXTO EM MAIÚSCULO
+}
+
+/*CLASSE COM O CONTEÚDO
+.conteudo {
+    padding: 50px 80px;                                 /*ESPAÇAMENTO INTERNO
+    text-align: justify;                                /*ALINHAMENTO DO TEXTO
+    color: #000;                                      /*COR DO TEXTO
+}
+.conteudo h3 {
+    color: #777;                                      /*COR DO TEXTO
+    font-size: 1.4em;                                   /*TAMANHO DA FONTE
+    text-align: center;                                 /*ALINHAMENTO DO TEXTO
+    text-transform: uppercase;                          /*TRANSFORMA O TEXTO EM MAIÚSCULO
+    padding-bottom: 20px;                               /*ESPAÇAMENTO INTERNO INFERIOR
+}
+.conteudo p {
+    padding-bottom: 20px;                               /*ESPAÇAMENTO INTERNO INFERIOR
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*NORMALIZE CSS*/
+
+/*
+LINK: https://necolas.github.io/normalize.css/8.0.1/normalize.css 
+*/
+
+/*------------------------------------------------------------------------------------------------*/
+/*CANTOS ARREDONDADOS*/
+
+/*.caixa {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px 30px 60px 90px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.caixa2 {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.caixa3 {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.caixa4 {
+    width: 400px;
+    height: 400px;
+    background: #b9c941;
+    border-radius: 150px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.imagem {
+    border-radius: 150px;
+}*/
+
+/*------------------------------------------------------------------------------------------------*/
+/*BOX-SIZING*/
+
+/*SEM BOX-SIZING*/
+/*.div1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    margin-bottom: 30px;
+}
+  
+.div2 {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+}*/
+
+/*COM BOX-SIZING*/
+/*.div3 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+  
+.div4 {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}*/
+
+/*------------------------------------------------------------------------------------------------*/
+/*GRADIENTES*/
+
+/*LINEAR*/
+/*#grad-linear {
+    background: linear-gradient(red, yellow);
+    width: 300px;
+    height: 200px;
+  }
+  #grad-linear2 {
+    background: linear-gradient(to right, red , yellow);
+    width: 300px;
+    height: 200px;
+  }
+  #grad-linear3 {
+    background: linear-gradient(to bottom right, red, yellow);
+    width: 300px;
+    height: 200px;
+  }*/
+  
+/*RADICAL*/
+/* #grad-radical {
+    background: radial-gradient(red, yellow, green);
+    width: 300px;
+    height: 200px;
+}
+#grad-radical2 {
+    background: radial-gradient(red 5%, yellow 15%, green 60%);
+    width: 300px;
+    height: 200px;
+}
+#grad-radical3 {
+    background: radial-gradient(circle, red, yellow, green);
+    width: 300px;
+    height: 200px;
+}*/
+  
+/*CÔNICO*/
+/*#grad-conico {
+    background: conic-gradient(red, yellow, green);
+    width: 300px;
+    height: 200px;
+}
+#grad-conico2 {
+    background: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+    width: 300px;
+    height: 200px;
+}
+#grad-conico3 {
+    background: conic-gradient(from 90deg, red, yellow, green);
+    width: 300px;
+    height: 200px;
+}
+#grad-conico4 {
+    background: conic-gradient(at 60% 45%, red, yellow, green);
+    width: 300px;
+    height: 200px;
+}*/
+
+/*------------------------------------------------------------------------------------------------*/
+/*SOMBRAS*/
+
+/*SOMBRA NO TEXTO*/
+
+/*horizontal e vertical
+.a h1 {
+    text-shadow: 2px 2px;
+}
+
+/*horizontal, vertical e cor
+.b h1 {
+    text-shadow: 2px 2px red;
+}
+
+/*horizontal, vertical, Desfoque e cor
+.c h1 {
+    text-shadow: 2px 2px 5px red;
+}
+
+/*várias sombras 
+.d h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}*/
+
+/*SOMBRA EM CAIXA*/
+
+/*horizontal e vertical
+#caixa1 {
+    margin-top: 50px;
+    width: 200px;
+    height: 100px;
+    background: rgb(169, 169, 228);
+    box-shadow: 10px 10px;
+    margin-bottom: 50px;
+}
+
+/*horizontal, vertical e cor
+#caixa2 {
+    width: 200px;
+    height: 100px;
+    background: rgb(169, 169, 228);
+    box-shadow: 10px 10px gray;
+    margin-bottom: 50px;
+}
+
+/*horizontal, vertical, desfoque e cor
+#caixa3 {
+    width: 200px;
+    height: 100px;
+    background: rgb(169, 169, 228);
+    box-shadow: 10px 10px 5px gray;
+    margin-bottom: 50px;
+}
+
+/*horizontal, vertical, desfoque, dispersão e cor
+#caixa4 {
+    width: 200px;
+    height: 100px;
+    background: rgb(169, 169, 228);
+    box-shadow: 10px 10px 5px 12px gray;
+    margin-bottom: 50px;
+}
+
+/*sombra interna
+#caixa5 {
+    width: 200px;
+    height: 100px;
+    background: rgb(169, 169, 228);
+    box-shadow: 10px 10px 5px gray inset;
+    margin-bottom: 50px;
+}
+
+/*várias sombras
+#caixa6 {
+    width: 200px;
+    height: 100px;
+    background: rgb(169, 169, 228);
+    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+    margin-bottom: 50px;
+}
+/*------------------------------------------------------------------------------------------------*/
