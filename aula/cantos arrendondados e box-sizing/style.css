@@ -1,0 +1,94 @@
+/*CANTOS ARRENDONDADOS
+
+border-radius: ; - Aplica um arrendonamento nas bordas
+
+OBS: Pode ter: 1 valor(para todos os lados), 2 valores(para 'esquerda e direita' e 'topo e inferior') ou 4 valores(1 para cada lado)*/
+
+/*CANTOS ARREDONDADOS*/
+.caixa {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px 30px 60px 90px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.caixa2 {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.caixa3 {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.caixa4 {
+    width: 400px;
+    height: 400px;
+    background: #b9c941;
+    border-radius: 150px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.imagem {
+    border-radius: 150px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*BOX-SIZING 
+
+box-sizing: border-box; - Nos permite incluir o preenchimento e a borda na largura e altura total de um elemento.
+
+Por padrão, a largura e a altura de um elemento são calculadas, por isso, se vc aplica um padding por exemplo ele irá somar a altura + largura + o padding.
+
+A propriedade box-sizing nos permite incluir o preenchimento e a borda na largura e altura total de um elemento, ou seja, se aplicarmos um padding ele não modificará o tamanho do elemento.*/
+
+/*BOX-SIZING*/
+
+/*SEM BOX-SIZING*/
+.div1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    margin-bottom: 30px;
+  }
+  
+  .div2 {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+  }
+
+  /*COM BOX-SIZING*/
+  .div3 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  
+  .div4 {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
