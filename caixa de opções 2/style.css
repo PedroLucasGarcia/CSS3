@@ -2,7 +2,6 @@
 * {
     margin: 0;                                          /*ESPAÇAMENTO EXTERNO*/
     padding: 0;                                         /*ESPAÇAMENTO INTERNO*/
-    /*border: 1px solid red;*/
 }
 body {
     font-family: sans-serif;                            /*FONTE*/
@@ -19,20 +18,21 @@ a {
 
 /*HEADER*/
 #header {
-    box-sizing: border-box;                             /*HEIGHT E PADDING FICAM COM UM VALOR FIXO*/
-    height: 70px;                                       /*ALTURA*/
+    height: auto;                                       /*ALTURA*/
     display: flex;                                      /*OS ITENS FICAM UM DO LADO DO OUTRO*/
     align-items: center;                                /*ALINHAMENTO DOS ITENS*/
-    justify-content:space-between;                      /**/
+    justify-content:space-between;                      /*ALINHA OS ELEMENTOS NAS 2 EXTREMIDADES*/
     background: #f8f4f3;                              /*FUNDO*/
     border-bottom: 1px solid #1f1f2b;                 /*BORDA*/
     width: 100%;                                        /*LARGURA*/
     position: fixed;                                    /*POSICIONAMENTO*/
+    top: 0;                                             /*TOPO*/
+    left: 0;                                            /*ESQUERDA*/
 }
-#header img {
-    padding-top: 3px;
-    padding-left: 2px;
-    /*padding: 5px;                                       /*ESPAÇAMENTO INTERNO*/
+
+/*LOGO*/
+#header img {                        
+    padding: .5rem;                                     /*ESPAÇAMENTO INTERNO*/
 }
 
 /*MENU DO HEADER*/
@@ -47,28 +47,43 @@ a {
     color: #1f1f2b;                                   /*COR*/
 }
 #menu a:hover {
-    color: #f87171;                                      /*COR*/
+    color: #f87171;                                   /*COR*/
 }
+
+/*------------------------------------------------BOTÃO MENU-------------------------------------------------*/
+#botao-menu {
+    display: none;
+
+}
+
+@media (max-width: 550px) {                             /*Se a página tiver menos que 550px*/
+    #botao-menu {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+}
+/*-----------------------------------------------------------------------------------------------------------*/
 
 /*APRESENTAÇÃO*/
 #caixa-apresentacao {
-    clear: both;
     width: 100%;                                        /*LARGURA*/
     background: #f8f4f3;                              /*FUNDO*/
     text-align: center;                                 /*ALINHAMNTO DO TEXTO*/
-    padding: 150px 0;                                   /*ESPAÇAMENTO INTERNO*/
+    padding: 180px 0 120px 0;                           /*ESPAÇAMENTO INTERNO*/
 }
 #caixa-apresentacao h1 {
     width: 50%;                                         /*LARGURA*/
     margin: auto;                                       /*ESPAÇAMENTO EXTERNO*/
     margin-bottom: 20px;                                /*ESPAÇAMENTO EXTERNO INFERIOR*/
-    font-size: 1.8em;
+    font-size: 1.8em;                                   /*TAMANHO DA FONTE*/
 }
 #caixa-apresentacao p {
     width: 60%;                                         /*LARGURA*/
     margin: auto;                                       /*ESPAÇAMENTO EXTERNO*/
     font-size: 1.2em;                                   /*TAMANHO DA FONTE*/
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI';                            /*FONTE*/
 }
 
 /*HTML*/
@@ -149,3 +164,13 @@ a {
 }
 
 /*RODAPÉ*/
+#rodape {
+    clear: both;                                        /*LIMPA O FLUXO*/
+    width: 100%;                                        /*LARGURA*/
+    padding: 10px 0;                                    /*ESPAÇAMENTO INTERNO*/
+    background: #f8f4f3;                              /*FUNDO*/
+    color: #1f1f2b;                                   /*COR*/
+}
+#rodape .copy {
+    padding-left: 5px;                                  /*ESPAÇAMENTO INTERNO ESQUERDO*/
+}
