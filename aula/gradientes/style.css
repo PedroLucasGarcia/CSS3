@@ -1,0 +1,55 @@
+/*LINEAR*/
+#grad-linear {
+  background: linear-gradient(red, yellow);
+  width: 300px;
+  height: 200px;
+}
+#grad-linear2 {
+  background: linear-gradient(to right, red , yellow);
+  width: 300px;
+  height: 200px;
+}
+#grad-linear3 {
+  background: linear-gradient(to bottom right, red, yellow);
+  width: 300px;
+  height: 200px;
+}
+
+/*RADICAL*/
+#grad-radical {
+  background: radial-gradient(red, yellow, green);
+  width: 300px;
+  height: 200px;
+}
+#grad-radical2 {
+  background: radial-gradient(red 5%, yellow 15%, green 60%);
+  width: 300px;
+  height: 200px;
+}
+#grad-radical3 {
+  background: radial-gradient(circle, red, yellow, green);
+  width: 300px;
+  height: 200px;
+}
+
+/*CÔNICO*/
+#grad-conico {
+  background: conic-gradient(red, yellow, green);
+  width: 300px;
+  height: 200px;
+}
+#grad-conico2 {
+  background: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+  width: 300px;
+  height: 200px;
+}
+#grad-conico3 {
+  background: conic-gradient(from 90deg, red, yellow, green);
+  width: 300px;
+  height: 200px;
+}
+#grad-conico4 {
+  background: conic-gradient(at 60% 45%, red, yellow, green);
+  width: 300px;
+  height: 200px;
+}
