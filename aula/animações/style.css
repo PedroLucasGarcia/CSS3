@@ -1,0 +1,29 @@
+@keyframes animacao {
+    from {
+        background-color: red;                /*Estado inicial da animação.*/
+        border-radius: 0;
+        top: 0;
+        left: 0;
+    }
+    to {
+        background-color: blue;               /*Estado final da animação.*/
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation-name: animacao;                   /*Nome da animação*/
+    animation-duration: 5s;                     /*Duração da animação em segundos*/
+    animation-timing-function: linear;          /*Função de temporização*/
+    animation-delay: 1s;                        /*Tempo de espera antes da animação começar*/
+    animation-iteration-count: 4;               /*Número de vezes que a animação deve ser repetida*/
+    animation-direction: alternate;             /*Direção da animação*/
+    animation-fill-mode: both;                  /*O estado do elemento antes e depois da execução da animação*/
+    
+    animation: animacao 5s linear 1s 4 alternate both;   /*Forma abreviada de declarar uma animação*/
+}
