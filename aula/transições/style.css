@@ -1,0 +1,12 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+}
+
+div:hover {
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    transition: all 2s ease 0s;     /*propriedade(todas), duração(2s), curva de temporização(ease), delay(0s)*/
+}
