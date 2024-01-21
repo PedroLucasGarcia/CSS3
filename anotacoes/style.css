@@ -1120,3 +1120,41 @@ LINK: https://necolas.github.io/normalize.css/8.0.1/normalize.css
     margin-bottom: 50px;
 }
 /*------------------------------------------------------------------------------------------------*/
+/* ANIMAÇÕES */
+/*@keyframes animacao {
+    from {
+        background-color: red;                /*Estado inicial da animação.
+    }
+    to {
+        background-color: blue;               /*Estado final da animação.
+    }
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    animation-name: animacao;                   /*Nome da animação
+    animation-duration: 5s;                     /*Duração da animação em segundos
+    animation-timing-function: linear;          /*Função de temporização
+    animation-delay: 1s;                        /*Tempo de espera antes da animação começar
+    animation-iteration-count: 4;               /*Número de vezes que a animação deve ser repetida
+    animation-direction: alternate;             /*Direção da animação
+    animation-fill-mode: both;                  /*O estado do elemento antes e depois da execução da animação
+    
+    animation: animacao 5s linear 1s 4 alternate both;   /*Forma abreviada de declarar uma animação
+}*/
+/*------------------------------------------------------------------------------------------------*/
+/*TRANSIÇÕES*/
+/*div {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+}
+
+div:hover {
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    transition: all 2s ease 0s;     /*propriedade(todas), duração(2s), curva de temporização(ease), delay(0s)
+}*/
+/*------------------------------------------------------------------------------------------------*/

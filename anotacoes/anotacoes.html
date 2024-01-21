@@ -715,7 +715,90 @@ box-shadow: 2px 2px 5px red; - especifica a sombra horizontal, a sombra vertical
 box-shadow: 2px 2px 5px 10px red; - especifica a sombra horizontal, a sombra vertical blur(desfoque), uma dispersão e uma cor.
 box-shadow: 2px 2px 5px red inset; - especifica que é uma sobra interna.
 box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; - especifica várias sombras.
+
 ----------------------------------------------------------------------------------------------------
 
+ANIMAÇÕES
+
+As animações em CSS são uma forma poderosa de adicionar movimento e interatividade a elementos HTML sem depender de JavaScript ou bibliotecas externas. Elas permitem criar transições suaves e efeitos visuais atraentes. Vamos explorar os principais conceitos e fornecer exemplos práticos.
+
+Conceitos Básicos:
+@keyframes: - Define os estágios da animação, especificando as propriedades CSS em diferentes pontos-chave.
+    from {estado inicial} -  Define o estado inicial da animação.
+    to {estado final} - Define o estado final da animação.
+
+animation: - Propriedade que aplica a animação a um elemento, especificando o nome da animação, a duração, o tipo de temporização, entre outros.
+
+Propriedades Principais:
+animation-name: - Nome dos keyframes(animação).
+
+animation-duration: - Duração da animação em segundos.
+
+animation-timing-function: - Função de temporização (ease, linear, ease-in, ease-out, ease-in-out).
+
+ease- Especifica uma animação com início lento, depois rápido e final lento (este é o padrão)
+linear- Especifica uma animação com a mesma velocidade do início ao fim
+ease-in- Especifica uma animação com início lento
+ease-out- Especifica uma animação com final lento
+ease-in-out- Especifica uma animação com início e fim lentos
+
+animation-delay: - Tempo de espera antes da animação começar.
+
+animation-iteration-count: - Número de vezes que a animação deve ser repetida (pode ser "infinite").
+
+animation-direction: - Direção da animação (normal, reverse, alternate, alternate-reverse).
+
+normal- A animação é reproduzida normalmente (avança). Este é o padrão
+reverse- A animação é reproduzida na direção reversa (para trás)
+alternate - A animação é reproduzida primeiro para frente e depois para trás
+alternate-reverse- A animação é reproduzida primeiro para trás e depois para frente
+
+animation-fill-mode: - Controla o estado de um elemento antes e depois da execução da animação (none, forwards, backwards, both).
+
+none: Não há preenchimento aplicado. As propriedades do elemento não são afetadas antes ou depois da animação.
+forwards: As propriedades do último quadro (100%) da animação são aplicadas após a conclusão da animação. O elemento permanece na posição final.
+backwards: As propriedades do primeiro quadro (0%) da animação são aplicadas antes do início da animação. O elemento é colocado na posição inicial antes de começar a animação.
+both: Combina os efeitos do forwards e backwards. As propriedades do primeiro quadro são aplicadas antes do início da animação, e as propriedades do último quadro são mantidas após a conclusão da animação.
+
+animation: - Forma abreviada para utilizar todas as animações.
+
+Forma de usar:
+div {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+div {
+    animation: example 5s linear 2s infinite alternate both;
+}
+
+----------------------------------------------------------------------------------------------------
+
+TRANSIÇÕES
+
+As transições CSS são uma maneira de suavizar as mudanças de propriedades de estilo em elementos HTML. Elas permitem que você defina uma transição suave de um estado para outro, como por exemplo, a mudança de cor, tamanho ou posição de um elemento. As transições são úteis para criar animações mais suaves e agradáveis aos olhos sem a necessidade de usar bibliotecas externas ou JavaScript.
+
+A propriedade transition é usada para definir as transições. Ela aceita uma lista de valores separados por vírgulas, onde cada valor representa a transição para uma propriedade específica. 
+
+A sintaxe básica é:
+
+transition-property: width;
+transition-duration: 2s;
+transition-timing-function: ease;
+transition-delay: 0s;
+
+transition: width 2s ease 0s;
+
+property: A propriedade que será afetada pela transição (por exemplo, color, width, opacity, etc.).
+duration: O tempo que a transição levará para ser concluída (em segundos ou milissegundos).
+timing-function: A curva de temporização que define como a transição progride ao longo do tempo (por exemplo, ease, linear, ease-in, ease-out, ease-in-out).
+delay: O tempo de espera antes que a transição comece (em segundos ou milissegundos).
+
+----------------------------------------------------------------------------------------------------
 
 -->
