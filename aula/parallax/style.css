@@ -49,11 +49,10 @@ body, html {
 
 /*TÍTULO DAS CAIXAS*/
 .titulo-caixa {
-    position: absolute;                                 /*POSICIONAMENTO*/
-    left: 0;                                            /*POSICIONAMENTO*/
-    top: 48%;                                           /*POSICIONAMENTO*/
-    width: 100%;                                        /*LARGURA*/
-    text-align: center;                                 /*ALINAHMENTO DO TEXTO*/
+    display: flex;                                        /*DISPLAY FLEXIVEL*/
+    height: 100%;                                         /*ALTURA*/
+    justify-content: center;                              /*ALINHAMENTO DOS ITENS FLEXÍVEIS*/
+    align-items: center;                                  /*ALINHAMENTO DOS ITENS FLEXÍVEIS*/
 }
 .titulo-caixa span.titulo {
     color: #fff;                                      /*COR*/
