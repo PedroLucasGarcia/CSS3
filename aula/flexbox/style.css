@@ -1,0 +1,27 @@
+/*FLEXBOX CONTAINER*/
+#conteudo {
+    background-color: #dcdcdc;
+    height: 400px;
+    display: flex;                      /*Define que o display é flexível.*/
+    
+    /*Especifica a direção dos itens flexíveis dentro de um flex container*/
+    flex-direction: row;                /*row, row-reverse, column e column-reverse.*/
+    
+    /*Especifica se os itens flexíveis devem ser agrupados ou não, se não houver espaço suficiente para eles em uma linha flexível*/
+    flex-wrap: wrap;                    /*nowrap, wrap e wrap-reverse.*/
+    
+    /*Alinha horizontalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo principal*/
+    justify-content: space-around;      /*flex-start, center, flex-end, space-around e space-between.*/
+    
+    /*Alinha verticalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo cruzado*/
+    align-items: center;                /*stretch, flex-start, center, flex-end e baseline.*/
+}
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid gray;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*FLEXBOX ITENS*/
