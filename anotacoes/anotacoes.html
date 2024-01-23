@@ -801,4 +801,228 @@ delay: O tempo de espera antes que a transição comece (em segundos ou milisseg
 
 ----------------------------------------------------------------------------------------------------
 
+FLEXBOX
+
+Flexbox, ou o Modelo de Layout Flexível, é um modelo de layout em CSS (Cascading Style Sheets) que permite projetar layouts web complexos de maneira mais eficiente e com menos código. O Flexbox é particularmente útil para criar estruturas de página responsivas e dinâmicas. Ele foi projetado para distribuir espaço ao longo de um único eixo ou dois eixos em um contêiner e alinhar itens dentro dele. Aqui estão alguns conceitos-chave e propriedades do Flexbox:
+
+Para começar a usar o modelo Flexbox, primeiro você precisa definir um flex container.
+
+    EX: <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+Contêiner Flexíveis:
+O flex container se torna flexível definindo a displaypropriedade como flex:
+
+    EX: .flex-container {
+            display: flex;
+        }
+
+As propriedades do flex container são:
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+flex-direction - define em qual direção o contêiner deseja empilhar os flex items. Os valores podem ser: row, row-reverse, column e column-reverse.
+
+    row - empilha os itens flexíveis horizontalmente (da esquerda para a direita):
+
+        EX: .flex-container {
+                display: flex;
+                flex-direction: row;
+            }
+        
+    row-reverse - empilha os itens flexíveis horizontalmente (mas da direita para a esquerda):
+
+        EX: .flex-container {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+    column - empilha os itens flexíveis verticalmente (de cima para baixo):
+
+        EX: .flex-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+    column-reverse - empilha os itens flexíveis verticalmente (mas de baixo para cima):
+
+        EX: .flex-container {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+flex-wrap - especifica se os itens flexíveis devem ser agrupados ou não. Especifica se os itens flexíveis devem ser agrupados ou não, se não houver espaço suficiente para eles em uma linha flexível. Os valores podem ser: nowrap, wrap e wrap-reverse.
+
+    nowrap - especifica que os itens flexíveis não serão agrupados (este é o padrão):
+
+    EX: .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+    wrap - especifica que os itens flexíveis serão agrupados(quebrados) se necessário:
+
+    EX: .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    wrap-reverse - especifica que os itens flexíveis serão agrupados(quebrados) se necessário, na ordem inversa:
+
+    EX: .flex-container {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+flex-flow - é uma propriedade abreviada para definir as propriedades flex-directione flex-wrap.
+
+    EX: .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+justify-content - é usado para alinhar os itens flexíveis. Alinha horizontalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo principal. Os valores podem ser: flex-start, center, flex-end, space-around e space-between.
+
+    flex-start - alinha os itens flexíveis no início do contêiner (este é o padrão):
+
+    EX: .flex-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+    center- alinha os itens flexíveis no centro do contêiner:
+
+    EX: .flex-container {
+            display: flex;
+            justify-content: center;
+        }
+
+    flex-end - alinha os itens flexíveis no final do contêiner:
+
+    EX: .flex-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    space-around - exibe os itens flexíveis com espaço antes, entre e depois das linhas:
+
+    EX: .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        space-between - exibe os itens flexíveis com espaço entre as linhas:
+
+    EX: .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+align-items - é usado para alinhar os itens flexíveis. Alinha verticalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo cruzado. Os valores podem ser: stretch, flex-start, center, flex-end e baseline.
+
+    stretch - estica os itens flexíveis para preencher o contêiner (este é o padrão):
+
+    EX: .flex-container {
+            display: flex;
+            height: 200px;
+            align-items: stretch;
+        }
+
+    flex-start - alinha os itens flexíveis na parte superior do contêiner:
+
+    EX: .flex-container {
+            display: flex;
+            height: 200px;
+            align-items: flex-start;
+        }
+
+    center - alinha os itens flexíveis no meio do contêiner:
+
+    EX: .flex-container {
+            display: flex;
+            height: 200px;
+            align-items: center;
+        }
+
+    flex-end - alinha os itens flexíveis na parte inferior do contêiner:
+
+    EX: .flex-container {
+            display: flex;
+            height: 200px;
+            align-items: flex-end;
+        }
+
+    baseline - alinha os itens flexíveis, como suas linhas de base alinham. Se baseia na linha do texto:
+
+    EX: .flex-container {
+            display: flex;
+            height: 200px;
+            align-items: baseline;
+        }
+
+align-content - é usado para alinhar as linhas flexíveis. Modifica o comportamento da propriedade flex-wrap. É semelhante a align items, mas em vez de align items flexíveis, alinha linhas flexíveis. Os valores podem ser: stretch, flex-start, center, flex-end, space-between e space-around.
+
+    stretch - estica as linhas flexíveis para ocupar o espaço restante (este é o padrão):
+
+    EX: .flex-container {
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+
+    flex-start - exibe as linhas flexíveis no início do contêiner:
+
+    EX: .flex-container {
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+    center - exibe as linhas flexíveis no meio do contêiner:
+
+    EX: .flex-container {
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+    flex-end - exibe as linhas flexíveis no final do contêiner: 
+
+    EX: .flex-container {
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+
+    space-between - exibe as linhas flexíveis com espaço igual entre elas:
+
+    EX: .flex-container {
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+    space-around - exibe as linhas flexíveis com espaço antes, entre e depois delas:
+
+    EX: .flex-container {
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+
+
 -->
