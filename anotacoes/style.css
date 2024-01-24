@@ -1161,22 +1161,22 @@ div:hover {
 /*FLEXBOX*/
 
 /*FLEXBOX CONTAINER*/
-#conteudo {
+/*#conteudo {
     background-color: #dcdcdc;
     height: 400px;
-    display: flex;                      /*Define que o display é flexível.*/
+    display: flex;                      /*Define que o display é flexível.
     
-    /*Especifica a direção dos itens flexíveis dentro de um flex container*/
-    flex-direction: row;                /*row, row-reverse, column e column-reverse.*/
+    /*Especifica a direção dos itens flexíveis dentro de um flex container
+    flex-direction: row;                /*row, row-reverse, column e column-reverse.
     
-    /*Especifica se os itens flexíveis devem ser agrupados ou não, se não houver espaço suficiente para eles em uma linha flexível*/
-    flex-wrap: wrap;                    /*nowrap, wrap e wrap-reverse.*/
+    /*Especifica se os itens flexíveis devem ser agrupados ou não, se não houver espaço suficiente para eles em uma linha flexível
+    flex-wrap: wrap;                    /*nowrap, wrap e wrap-reverse.
     
-    /*Alinha horizontalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo principal*/
-    justify-content: space-around;      /*flex-start, center, flex-end, space-around e space-between.*/
+    /*Alinha horizontalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo principal
+    justify-content: space-around;      /*flex-start, center, flex-end, space-around e space-between.
     
-    /*Alinha verticalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo cruzado*/
-    align-items: center;                /*stretch, flex-start, center, flex-end e baseline.*/
+    /*Alinha verticalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo cruzado
+    align-items: center;                /*stretch, flex-start, center, flex-end e baseline.
 }
 .item {
     width: 100px;
@@ -1184,5 +1184,77 @@ div:hover {
     margin: 10px;
     background-color: white;
     border: 1px solid gray;
+}/*
+/*------------------------------------------------------------------------------------------------*/
+/*FLEXBOX ITENS*/
+/*#conteudo2 {
+    background-color: #dcdcdc;
+    height: 400px;
+    display: flex;  /*Define que o display é flexível.
 }
+
+.flexbox-items {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid gray;
+
+    /*Especifica quanto um item flexível crescerá em relação ao restante dos itens flexíveis dentro do mesmo contêiner. Quanto maior o número maior é a área que ele ocupa.
+    flex-grow: 0; /*PADRÃO
+
+    /*Especifica quanto um item flexível diminuirá em relação ao restante dos itens flexíveis dentro do mesmo contêiner. Quanto maior o número menor é a área que ele ocupa.
+    flex-shrink: 1; /*PADRÃO
+
+    /*Especifica o comprimento inicial de um item flexível.
+    flex-basis: 100px;
+
+    /*Uma propriedade abreviada para as propriedades flex-grow, flex-shrink e flex-basis.
+    flex: 0 1 100px;
+
+    /*Especifica o alinhamento de um item flexível (substitui a propriedade align-items do contêiner flexível).
+    align-self: flex-start;
 }
+
+/*Especifica(altera) a ordem dos itens flexíveis dentro do mesmo contêiner.
+.ordem1 {
+    order: 1;   /*PRIMEIRO
+}
+.ordem2 {
+    order: 2;   /*SEGUNDO
+}
+.ordem3 {
+    order: 3;   /*TERCEIRO
+}
+.ordem4 {
+    order: 4;   /*QUARTO
+}
+.ordem {
+    order: -1;  /*DIMINUI 1 NO VALOR (POR PADRÃO TODOS OS ELEMENTOS POSSUI O VALOR 0 E SEGUE A ORDEM DE DECLARAÇÃO, SE COLOCARMOS O -1 ESSE ELEMENTO SERÁ O PRIMEIRO)
+}
+
+.item1 {
+    flex-grow: 1; /*CRESCERÁ ATÉ O TAMANHO DO CONTAINER
+    align-self: flex-end;
+}
+
+.item2 {
+    flex-grow: 2; /*CRESCERÁ ATÉ O TAMANHO DO CONTAINER E TERÁ O DOBRO DO TAMANHO DO ITEM1
+}
+
+.item3 {
+    flex-shrink: 2; /*QUANDO A TELA DIMINUIR, ELE DIMINUIRÁ O DOBRO DOS OUTROS ELEMENTOS
+}
+
+.item4 {
+    flex-shrink: 4; /*QUANDO A TELA DIMINUIR, ELE DIMINUIRÁ O DOBRO DO ITEM3
+}
+
+.item5 {
+    flex-basis: 80px;   /*TERÁ O TAMANHO DE 80PX
+    align-self: center;
+}
+
+.item6 {
+    flex: 3 5 130px;    /*GROW, SHRINK, BASIS
+}*/
