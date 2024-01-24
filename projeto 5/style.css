@@ -1,0 +1,201 @@
+/*GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*BODY*/
+body{
+    background: #f4f2ec url(img/fundo.png) repeat-x;
+    font-size: 12px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+/*FORMATANDO LINKS*/
+a:link, a:active, a:visited{
+    color: #af670a;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+
+/*CONTAINER PAI*/
+#container{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+/*HEADER(CABEÇALHO)*/
+header{
+    padding: 15px 0;
+    height: 55px;
+}
+
+/*LOGO*/
+#logo h1{
+    float: left;
+}
+#logo a{
+    width: 248px;
+    height: 21px;
+    text-indent: -9999px;
+    display: block;
+    background: url(img/logo.png) no-repeat;
+    margin-top: 18px;
+}
+
+/*NAVEGAÇÃO*/
+nav ul{
+    float: right;
+    list-style: none;
+    margin: 20px;
+}
+nav ul li{
+float: left;
+}
+nav ul li a{
+    display: block;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+/*PRINCIPAL*/
+#conteudo{
+    width: 710px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+/*FORMATANDO H3*/
+h3{
+    color: #504b39;
+    font-size: 1.0em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/*POSTS*/
+article{
+    width: 310px;
+    float: left;
+}
+article#video{
+    margin-left: 25px;
+}
+article#mapa{
+    margin-left: 37px;
+}
+article#exposicoes{
+    margin: 15px 0 0 25px;
+}
+article#historia{
+    margin: 15px 0 0 37px;
+}
+
+/*POSTS - LINK HOVER*/
+article a:hover{
+    color: #504b39;
+}
+
+/*LATERAL*/
+aside{
+    width: 350px;
+    float: right;
+    background-color: #ebe7dd;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+/*AGENDAR VISITA*/
+section#visita{
+    background-color: #cdc8b1;
+    padding: 10px 27px 27px 27px;
+    margin-top: 10px;
+}
+
+/*FORMATANDO H4*/
+#visita h4{
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+}
+
+/*FORMATANDO FORMULÁRIO*/
+input{
+    height: 20px;
+    width: 80px;
+    background-color: white;
+    border: none;
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+input.campo{
+    border: 1px solid #ada484;
+}
+input.botao{
+    background-color:  #9b9271;
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+input.botao:hover{
+    border: 1px solid #504b39;
+}
+fieldset{
+    border: none;
+    padding: 5px;
+}
+legend{
+    display: none;
+}
+
+/*FORMATANDO H4*/
+#galeria h4{
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+}
+
+/*GALERIA DE FOTOS*/
+section#galeria {
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+section#galeria a{
+    display: block;
+    background: url(img/fundo-foto.png) no-repeat;
+    float: left;
+    padding: 17px 15px;
+    margin: 10px 0 0 20px;
+}
+
+section#galeria img{
+    margin-left: 2px;
+    margin-top: 3px;
+}
+
+/*RODAPÉ*/
+footer{
+    clear: both;
+    padding: 20px 0 30px 0;
+    text-align: center;
+    background: url(img/fundo-rodape.png) no-repeat center top;
+    margin-top: 20px;
+}
+footer>p{
+    padding-bottom: 10px;
+}
+footer>p a{
+    padding: 2px 10px;
+}
+footer a:hover{
+    color: #504b39;
+}
