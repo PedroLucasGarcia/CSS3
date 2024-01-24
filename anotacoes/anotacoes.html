@@ -814,7 +814,7 @@ Para começar a usar o modelo Flexbox, primeiro você precisa definir um flex co
         </div>
 
 Contêiner Flexíveis:
-O flex container se torna flexível definindo a displaypropriedade como flex:
+O flex container se torna flexível definindo a propriedade display como flex:
 
     EX: .flex-container {
             display: flex;
@@ -1024,5 +1024,75 @@ align-content - é usado para alinhar as linhas flexíveis. Modifica o comportam
             align-content: space-around;
         }
 
+Itens flexíveis
+Os elementos filhos diretos de um flex container tornam-se automaticamente itens flexíveis.
 
+As propriedades do item flexível são:
+
+order
+flex-grow
+flex-shrink
+flex-basis
+flex
+align-self
+
+order - Especifica a ordem dos itens flexíveis dentro do mesmo contêiner.
+
+    EX: Altera a ordem dos itens flexíveis de (1,2,3,4) para (4,2,1,3):
+        <div class="flex-container">
+            <div style="order: 3">1</div>
+            <div style="order: 2">2</div>
+            <div style="order: 4">3</div>
+            <div style="order: 1">4</div>
+        </div>
+
+flex-grow - Especifica quanto um item flexível crescerá em relação ao restante dos itens flexíveis dentro do mesmo contêiner. Quanto maior o número maior é a área que ele ocupa.
+
+    EX: Faz o terceiro item flexível crescer oito vezes mais rápido que os outros itens flexíveis:
+        <div class="flex-container">
+            <div style="flex-grow: 1">1</div>
+            <div style="flex-grow: 1">2</div>
+            <div style="flex-grow: 8">3</div>
+        </div>
+
+flex-shrink - Especifica quanto um item flexível diminuirá em relação ao restante dos itens flexíveis dentro do mesmo contêiner. Quanto maior o número menor é a área que ele ocupa.
+
+    EX: Não deixa o terceiro item flexível encolher tanto quanto os outros itens flexíveis:
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div style="flex-shrink: 0">3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+
+flex-basis - Especifica o comprimento inicial de um item flexível.
+
+    EX: Define o comprimento inicial do terceiro item flexível para 200 pixels:
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div style="flex-basis: 200px">3</div>
+            <div>4</div>
+         </div>
+
+flex - Uma propriedade abreviada para as propriedades flex-grow, flex-shrink e flex-basis.
+
+    EX: Torna o terceiro item flexível não expansível(grow), não encolhível(shrink) e com comprimento inicial(basis) de 200 pixels:
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div style="flex: 0 0 200px">3</div>
+            <div>4</div>
+        </div>
+
+align-self - Especifica o alinhamento de um item flexível (substitui a propriedade align-items do contêiner flexível).
+
+    EX: Alinha o terceiro item flexível no meio do contêiner:
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div style="align-self: center">3</div>
+            <div>4</div>
+        </div>
 -->
